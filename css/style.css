@@ -1,0 +1,249 @@
+*{
+    margin: 0px; /* margen externo */
+    padding: 0px; /* margen interno */
+}
+
+body{
+    background-color:rgb(250, 243, 224)
+}
+
+header{
+    position: sticky;
+    top:0px;
+    background-color: rgb(250, 243, 224)
+
+}
+
+
+h1{
+    color: black;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+h2{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 16px ;
+}
+
+h3{
+    color: rgb(30, 33, 45);
+    text-align: left;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+
+
+p{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-align: center;
+    line-height: 20px;
+    padding: 16px;
+}
+
+div{
+    background-color:  rgb(182, 137, 115);
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 5px;
+    line-height: 25px;
+    padding:16px;
+
+}
+
+span{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+button{
+    margin: 16px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(30, 33, 45)
+}
+
+
+.header__nav{
+    position: sticky;
+}
+
+.header__logo{
+    display: inline;
+    padding: 0px 15px;
+}
+
+.header__lista{
+    display: inline;
+    list-style: none;
+}
+
+.header__item{
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: sticky;
+    top: 0px;
+    padding: 20px;
+}
+
+.header__item a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+
+.portada{
+    width: 1900px; /* ancho */
+    height: 700px;
+}
+
+.nosotros__parrafo{
+    text-align: justify;
+}
+
+.servicio__galeria{
+    width: 500px;
+    height: 300px;
+    padding: 0px 16px;
+}
+
+.servicios__titulo{
+    text-align: center;
+    padding: 18px;
+}
+
+.servicios__subtitulo{
+    color: rgb(30, 33, 45);
+    text-align: left;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 29px;
+    padding: 18px;
+}
+
+.servicios__texto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    padding: 18px;
+}
+
+.info__titulo{
+    text-align: left;
+    text-decoration: underline;
+}
+
+.info__direccion{
+    text-align: left;
+}
+
+
+.descuento{
+    background-color: rgb(182, 137, 115);
+}
+
+.descuento__info{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.habitacion__imagen{
+    width: 600px;
+    padding:16px;
+}
+
+.habitacion__parrafo{
+    text-align: justify;
+}
+
+.horarios__info{
+    font-size: 16px;
+    text-align: center;
+}
+
+.contacto__subtitulo{
+    text-decoration: underline;
+}
+
+
+.modelo__titulo{
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+.modelo__item{
+    font-size: 20px;
+    line-height: 25px;
+    list-style: circle;
+    margin: 25px;
+}
+
+.ayuda__titulo{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.ayuda__texto{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+}
+
+.galeria__subtitulo{
+    font-style: italic;
+    font-size: 30px;
+}
+.galeria__imagen{
+    width: 500px;
+    height: 500px;
+    padding: 0px 0px 10px 10px;
+}
+
+.contacto__info{
+    background-color: rgb(182, 137, 115);
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+.contacto__ayuda{
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    text-align: left;
+}
+
+
+.contacto__mapa{
+    padding: 0px 16px;
+}
+
+.footer__parrafo{
+    text-align: center;
+    color: white;
+}
+
+.footer__redes{
+    width: 25px;
+}
+
