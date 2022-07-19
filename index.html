@@ -30,42 +30,73 @@
     </header>
     <!-- cierre de fila de logo y navegacion -->
     <main><!-- todo el contenido que no sea header o footer-->
-        <!-- primera seccion -->
-        <section class="portada">
-            <img class="portada" src="resources/entrada.jpg" alt="recepcion de hotel">
-            <button> Conocer más </button>
+        <!-- seccion principal -->
+        <section class="portada__principal">
+            <h1 class="portada__titulo"> Hotel BA </h1>
+            <div class="portada__boton"><button> CONOCÉNOS </button></div>
         </section>
         <!-- segunda seccion -->
-        <section class="nosotros">
-            <h1 class="nosotros__titulo"> HOTEL BA </h1>
-            <p class="nosotros__parrafo"> Hotel Boutique BA es un hotel de estilo urbano en el corazón de Recoleta, en la ciudad de Buenos Aires. Se encuentra ubicado cerca de los principales puntos de interés de la ciudad, para que todos sus huéspedes puedan disfrutar de la misma en su plenitud. Su atención personalizada y la excelente ubicación hacen de este hotel la mejor opción de alojamiento en Buenos Aires. Altamente calificado por su limpieza reconocido por su fachada moderna. Cuenta con conexión WiFi gratuita y recepción abierta las 24 horas. Los huéspedes pueden relajarse en distintos sectores.Las habitaciones combinan muebles clásicos de madera con TV de pantalla plana y aire acondicionado. Todos incluyen baños bien equipados con bañera o ducha. Los huéspedes podrán disfrutar de las especialidades argentinas tradicionales y algunos platos internacionales en el restaurante del hotel. Asimismo, contamos con un bar que  sirve bebidas y licores locales. Gracias a su ubicación central, el Hotel también ofrece fácil acceso al centro de Buenos Aires y está cerca de reconocidas avenidas, con muchas tiendas de primer nivel. </p> 
-            <img class="servicio__galeria" src="resources/recepcion.jpg" alt="recepcion">
-        </section> 
-        <!-- tercera seccion -->
-        <section class="servicios">
-            <h2 class="servicios__titulo"> Servicios destacados </h2>
-            <p class="nosotros__parrafo"> Dado que los hoteles boutique se caracterizan por ser más pequeños que las grandes cadenas de hoteles, también pueden brindar un servicio más personalizado a sus huéspedes. En una nota especial, algunos pueden ofrecer comodidades a medida, mientras que otros pueden proporcionar una guía extensa sobre el área dependiendo de su preferencia. No importa cómo lo hagan, se aseguran de trabajar la milla extra para darle un buen rato durante su estadía. Nuestro hotel abrió sus puertas al mundo en 2005. Desde entonces, ha acogido a una serie de invitados notables los cuales disfrutan del establecimiento y de sus servicios de Restaurant/Bar, Sauna&Spa y una increíble piscina. </p>
-            <button> Más </button>
+        <section class="texto">
+            <article class="info__texto texto__contenido">
+                    <p>Hotel BA es un hotel de estilo urbano en el corazón de Recoleta, en la ciudad de Buenos Aires. 
+                        Se encuentra ubicado cerca de los principales puntos de interés de la ciudad, para que todos sus huéspedes puedan disfrutar de la misma en su plenitud. 
+                        Su atención personalizada y la excelente ubicación hacen de este hotel la mejor opción de alojamiento en Buenos Aires. 
+                        </p> 
+            </article>
         </section>
-        <!-- cuarta seccion -->
-        <section class="info">
-            <h2 class="info__titulo"> Dónde ubicarnos </h2>
-            <p class="info__direccion"> José Evaristo Uriburu 1735 , Ciudad Autonoma de Buenos Aires </p>
-            <iframe class="info__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.596105351503!2d-58.394542!3d-34.589085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9878ae211d%3A0x953308eeda44efab!2sPres.%20Jos%C3%A9%20Evaristo%20Uriburu%201735%2C%20C1114AAS%20CABA!5e0!3m2!1sen!2sar!4v1656388272533!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="principal__tarjetas">
+            <article class="principal__tarjeta tarjeta__comida">
+                <img class="principal__img" src="resources/comida.jpg" alt="plato de comida">
+                <h2> Restaurante & Bar </h2>
+                <p>Desayuno buffet conformado por jugos naturales, café expreso, exquisitos tés, además de frutas, yogurt, cereales, embutidos y más.</p>
+                <button> Conocer más </button>
+            </article>
+            <article class="principal__tarjeta tarjeta__spa">
+                <img class="principal__img" src="resources/sauna1.jpg" alt="sauna">
+                <h2> Spa </h2>
+                <p>Si luego de un día de Buenos Aires y sus atractivos necesitas recargar energías, puedes nutrir tu cuerpo y espíritu en nuestro Spa...</p>
+                <button> Conocer más </button>
+            </article>
+            <article class="principal__tarjeta tarjeta__jardin">
+                <img class="principal__img"src="resources/jardin.jpg" alt="jardin">
+                <h2> Jardín & Piscina </h2>
+                <p>Diseñado para encontrar la tranquilidad que estás buscando.
+                    Contamos con un espacio verde con deck y piscina para disfutar del aire libre </p>
+                <button> Conocer más </button>
+            </article>
         </section>
-        <!-- quinta seccion -->
-        <section class="descuento">
-            <h3 class="descuento__info"> Descuento en efectivo </h3>
-            <p class="descuento__info"> Obtenga un 5% de descuento adicional para pagos realizados en efectivo (solo dólares estadounidenses USD). Aplicable ÚNICAMENTE para reservas DIRECTAS vía e-mail ( reservas@hotelba.com ) .</p>
-            <h3 class="descuento__info"> RECEPCIÓN Todos los días de 9 AM a 10 PM</h3>
+        <section class="ws">
+            <img class="ws__imagen" src="resources/WhatsApp.svg.png" alt="whatsapp">
         </section>
     </main>
     <!-- pie de pagina -->
-    <footer class="fondo">
-        <p class="footer__parrafo"> Nuestras redes </p>
-        <a href="https://facebook.com"> <img class ="footer__redes"src="resources/facebook-square-brands.svg" alt="facebook"> </a>
-        <a href="https://instagram.com"> <img class="footer__redes" src="resources/instagram-brands.svg" alt="instagram"> </a>
-        <p class="footer__parrafo"> 2022 Todos los derechos reservados </p>
+    <footer>
+        <section class="footer__contacto">
+            <h2 class="footer__titulo"> HOTEL BA </h2>
+            <ul class="footer__lista">
+                <li class="footer__item"> Dirección : Pres. José Evaristo Uriburu 1735 </li>
+                <li class="footer__item"> Recoleta </li>
+                <li class="footer__item"> Ciudad de Buenos Aires </li>
+                <li class="footer__item"> Argentina </li>
+                <li class="footer__item"> Tel : +54 11 5485-7877</li>
+        </section>
+        <section class="footer__enlaces">
+            <h2 class="footer__titulo"> Enlaces </h2>
+            <ul class="footer__lista">
+                <li class="footer__item"> <a href="pages/habitaciones.html"> Habitaciones</a></li>
+                <li class="footer__item"> <a href="pages/galeria.html"> Galeria </a></li>
+                <li class="footer__item"> <a href="pages/servicios.html"> Servicios</a></li>
+                <li class="footer__item"> <a href="pages/contacto.html"> Contacto</a></li>
+            </ul>
+        </div>
+        </section>
+        <section class="footer__redes">
+            <a href="https://facebook.com" target="_blank"> <img class ="footer__iconos"src="resources/facebook-square-brands.svg" alt="facebook"> </a>
+            <a href="https://instagram.com" target="_blank"> <img class="footer__iconos" src="resources/instagram-brands.svg" alt="instagram"> </a> 
+            <a href="https://youtube.com" target="_blank"> <img class="footer__iconos" src="resources/youtube-square-brands.svg" alt="youtube"> </a>
+            <p class="footer__derechos"> 2022 Todos los derechos reservados </p>
+        </section>
     </footer>    
 </body>
 </html>
+

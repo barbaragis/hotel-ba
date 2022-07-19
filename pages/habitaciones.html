@@ -30,63 +30,122 @@
     </header>
     <!-- cierre de fila de logo y navegacion -->
     <main>
-        <section class="habitacion">
-            <h1 class="habitacion__titulo"> Habitaciones </h1>
-            <img class="habitacion__imagen" src="../resources/cuadros.jpg" alt="cuadros">
-            <p class="habitacion__parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet quisquam facere, accusantium itaque non odio tempore libero sed sequi, enim aperiam autem, hic aspernatur architecto dicta dolorum! Perferendis, voluptatem?</p> 
-            <button> Reserve una habitación </button>
+        <section class="principal">
+            <article class="principal__info">
+                <img class="principal__imagen" src="../resources/cuadros.jpg" alt="cuadros en habitacion">
+                <div class="principal__texto">
+                    <h2> Habitaciones </h2>
+                    <p>Las 20 habitaciones del HOTEL BA son adecuadas para familias jóvenes, estudiantes que viajan y cualquier persona que busque un alojamiento asequible en Recoleta. 
+                        Con cómodas camas individuales y dobles grandes, nuevos televisores de pantalla plana. 
+                        Los alojamientos de nuestro Boutique Hotel se encuentran entre los mejores de la ciudad de Buenos Aires para viajeros con presupuesto limitado.
+                    </p>
+                    <ul > 
+                        <li > CHECK-IN a partir de las 16 PM </li>
+                        <li > CHECK-OUT hasta las 11 AM  </li>
+                        <li >RECEPCIÓN de 9 AM a 10 PM </li> 
+                    </ul>
+                </div>
+            </article>
         </section>
-        <section class="horarios">
-            <h2 class="horarios__info"> CHECK-IN a partir de las 16 PM </h2>
-            <h2 class="horarios__info">CHECK-OUT hasta las 11 AM  </h2>
-            <h2 class="horarios__info">RECEPCIÓN de 9 AM a 10 PM </h2>
-            
-        </section>
-        <section class="modelo">
-            <h2 class="modelo__titulo"> Habitacion Doble Pro </h2>
-            <ul class="modelo__lista">
-                <li class="modelo__item"> Habitación doble de 60 m² para 2 personas </li>
-                <li class="modelo__item" > Cuarto de baño privado con bañera </li>
-                <li class="modelo__item" > Netflix </li>
-                <li class="modelo__item" > Desayuno incluido </li>
-                <li class="modelo__item"> Admite mascotas </li>
-            </ul>
-            <img class="habitacion__imagen" src="../resources/habitacion.jpg">
-        </section>
-        <section class="modelo">
-            <h2 class="modelo__titulo"> Habitacion Doble </h2>
-            <ul class="modelo__lista">
-                <li class="modelo__item"> Habitación doble de 40 m² para 2 personas </li>
-                <li class="modelo__item"> Cuarto de baño privado con bañera </li>
-                <li class="modelo__item"> Netflix </li>
-                <li class="modelo__item">Desayuno incluido </li>
-                <li class="modelo__item"> Admite mascotas </li>
-            </ul>
-            <img class="habitacion__imagen" src="../resources/habitacion.jpg">
-        </section>
-        <section class="modelo"> 
-            <h2 class="modelo__titulo">Habitacion Simple </h2>
-            <ul class="modelo__lista">
-                <li class="modelo__item"> Habitación simple para 1 persona </li>
-                <li class="modelo__item"> Cuarto de baño privado con bañera </li>
-                <li class="modelo__item">Netflix </li>
-                <li class="modelo__item">Desayuno incluido </li>
-                <li class="modelo__item"> Admite mascotas </li>
-            </ul>
-            <img class="habitacion__imagen" src="../resources/habitacion.jpg">
-        </section>
-        <section class="ayuda">
-            <h3 class="ayuda__titulo"> ¿ Necesita ayuda? </h3>
-            <h3 class="ayuda__texto">Háganos saber si podemos ayudarlo con consultas de reserva, solicitud personal o cualquier otra información.</h3>
-            <button> CONTÁCTENOS </button>
+            <section class="habitaciones">
+                <article class="habitaciones__info" >
+                    <div class="habitaciones__contenido" >
+                        <h2> Habitación Deluxe </h2>
+                        <ul>
+                            <li class="lista"> Habitación doble de 60 m² para 2 personas </li>
+                            <li class="modelo__item" > Cuarto de baño privado con bañera </li>
+                            <li class="modelo__item" > Cama King Size y almohadas Simmons Beauty Rest </li>
+                            <li class="modelo__item" > Desayuno incluido </li>
+                            <li class="modelo__item"> TV de pantalla plana con HBO y Netflix gratuito </li>
+                            <li class="modelo__item"> Caja de seguridad </li>
+                            <li class="modelo__item"> Espacio de trabajo con silla </li>
+                            <li class="modelo__item"> Balcón hacia la calle</li> 
+                        </ul>
+                    </div>    
+                    <img class="habitacion__img" src="../resources/doble.jpg" alt="cama deluxe">
+                </article>
+            </section>
+            <section class="habitaciones">
+                <article class="habitaciones__info" >
+                    <div class="habitaciones__contenido" >
+                        <h2> Habitacion Doble Superior </h2>
+                        <ul>
+                            <li class="modelo__item"> Habitación doble de 40 m² para 2 personas </li>
+                            <li class="modelo__item"> Cuarto de baño privado con bañera </li>
+                            <li class="modelo__item"> Habitacion equipada con cama queen size</li>
+                            <li class="modelo__item">Desayuno incluido </li>
+                            <li class="modelo__item"> Tv lcd 32" </li>
+                            <li class="modelo__item"> Caja de seguridad </li>
+                            <li class="modelo__item"> Espacio de trabajo con silla </li>
+                        </ul>
+                    </div>
+                    <img src="../resources/deluxe.jpg" alt="cama"c>
+                </article>
+            </section>
+            <section class="habitaciones">
+                <article class="habitaciones__info" >
+                    <div class="habitaciones__contenido" >
+                        <h2 >Habitacion Doble Classic </h2>
+                        <ul class="modelo__lista">
+                            <li class="modelo__item"> Habitación doble de 40m² para 2 personas </li>
+                            <li class="modelo__item"> Cuarto de baño privado con bañera </li>
+                            <li class="modelo__item">Desayuno incluido </li>
+                            <li class="modelo__item"> Tv lcd 32" </li>
+                            <li class="modelo__item"> Caja de seguridad </li>
+                        </ul>
+                    </div>
+                    <img src="../resources/cuartodoble.jpg" alt="cama doble">
+                </article>
+            </section>
+            <section class="habitaciones">
+                <article class="habitaciones__info" >
+                    <div class="habitaciones__contenido" >
+                        <h2 >Habitación Simple Classic  </h2>
+                        <ul >
+                            <li class="modelo__item"> Habitación simple para 1 persona </li>
+                            <li class="modelo__item">Desayuno incluido </li>
+                            <li class="modelo__item"> Tv lcd 32" </li>
+                            <li class="modelo__item"> Caja de seguridad </li>
+                        </ul>
+                    </div>
+                    <img src="../resources/habitacion.jpg" alt="habitacion simple">
+                </article>
+            </section>
+            <section class="info">
+                <h3> ¿ Necesita ayuda? </h3>
+                <h3>Háganos saber si podemos ayudarlo con consultas de reserva, solicitud personal o cualquier otra información.</h3>
+                <div class="boton">
+                    <button> CONTÁCTENOS </button>
+                </div>
         </section>
     </main>
     <!-- pie de pagina -->
-    <footer class="fondo">
-        <p class="footer__parrafo"> Nuestras redes </p>
-        <a href="https://facebook.com"> <img class="footer__redes"src="../resources/facebook-square-brands.svg" alt="facebook"> </a>
-        <a href="https://instagram.com"> <img class="footer__redes" src="../resources/instagram-brands.svg" alt="instagram"> </a>
-        <p class="footer__parrafo"> 2022 Todos los derechos reservados </p>
+    <footer>
+        <section class="footer__contacto">
+            <h2 class="footer__titulo"> HOTEL BA </h2>
+            <ul class="footer__lista">
+                <li class="footer__item"> Dirección : Pres. José Evaristo Uriburu 1735 </li>
+                <li class="footer__item"> Recoleta </li>
+                <li class="footer__item"> Ciudad de Buenos Aires </li>
+                <li class="footer__item"> Argentina </li>
+                <li class="footer__item"> Tel : +54 11 5485-7877</li>
+        </section>
+        <section class="footer__enlaces">
+            <h2 class="footer__titulo"> Enlaces </h2>
+            <ul class="footer__lista">
+                <li class="footer__item"> <a href="../pages/habitaciones.html"> Habitaciones</a></li>
+                <li class="footer__item"> <a href="../pages/galeria.html" > Galeria </a></li>
+                <li class="footer__item"> <a href="../pages/servicios.html" > Servicios</a></li>
+                <li class="footer__item"> <a href="../pages/contacto.html"> Contacto</a></li>
+            </ul>
+        </div>
+        </section>
+        <section class="footer__redes">
+            <a href="https://facebook.com" target="_blank"> <img class ="footer__iconos"src="../resources/facebook-square-brands.svg" alt="facebook"> </a>
+            <a href="https://instagram.com" target="_blank"> <img class="footer__iconos" src="../resources/instagram-brands.svg" alt="instagram"> </a> 
+            <a href="https://youtube.com" target="_blank"> <img class="footer__iconos" src="../resources/youtube-square-brands.svg" alt="youtube"> </a>
+            <p class="footer__derechos"> 2022 Todos los derechos reservados </p>
+        </section>
     </footer>    
 </body>
 </html>

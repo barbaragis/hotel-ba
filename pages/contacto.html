@@ -29,55 +29,77 @@
         </nav>
     </header>
     <!-- cierre de fila de logo y navegacion -->
-    </main>
-        <section class="contacto">
-            <h1 class="contacto__titulo"> Contacto </h1>
-            <p class="contacto__titulo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam sequi quos architecto, laudantium aut quod culpa temporibus? Eaque nam commodi distinctio. Ipsam vel obcaecati magni odit aliquid quo unde possimus.</p>
-            <img class="habitacion__imagen" src="../resources/contacto.jpg" alt="interior del hotel">
-        </section>
-        <section class="contacto">
-            <h2 class="contacto__subtitulo"> Información de contacto </h2>
-            <p class="contacto__parrafo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque recusandae maiores et corrupti distinctio vel quia hic odit, accusamus alias neque labore libero repellendus dolore quaerat autem voluptatem repellat inventore.</p>
-            <h3 class="contacto__info"> info@hotelbuenosaires.com</h3>
-            <h3 class="contacto__info"> Teléfono de recepción : +54 11 5482-4544 </h3>
-            <h3 class="contacto__info"> Teléfono de reservas : +54 11 5485-7877 </h3>
-        </section>
-        <section>
-            <h2 class="contacto__subtitulo"> Nuestra ubicación </h2>
-            <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.2875732871412!2d-58.39624838698653!3d-34.589615180375084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9878ae211d%3A0x953308eeda44efab!2sPres.%20Jos%C3%A9%20Evaristo%20Uriburu%201735%2C%20C1114AAS%20CABA!5e0!3m2!1sen!2sar!4v1655665797180!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section class="contacto">
-            <h2 class="contacto__ayuda"> Déjanos tu mensaje </h2>
-        <section>
-        <form method="post">
-            <div class="form__nombre">
-                <label> NOMBRE </label> <!-- Palabra antes del input -->
-                <input name="nombre"> <!-- Nombre  -->
+    <main> 
+        <div class="bloque">
+            <div class="mapa">
+                <iframe class="mapa__imagen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.2875732871412!2d-58.39624838698653!3d-34.589615180375084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9878ae211d%3A0x953308eeda44efab!2sPres.%20Jos%C3%A9%20Evaristo%20Uriburu%201735%2C%20C1114AAS%20CABA!5e0!3m2!1sen!2sar!4v1655665797180!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="form__email">
-                <label> DIRECCIÓN DE CORREO ELECTRÓNICO </label>
-                <input name="email"><!-- Email -->
+            <div class="info">
+                <h1> Dónde ubicarnos</h1>
+                <p> ¡Estamos ubicados justo en Recoleta!
+                    Los lugares de negocios, centros comerciales y parques se encuentran a 15 minutos en auto . Se puede llegar fácilmente a Hotel BA en automóvil, taxi o transporte público.
+                </p>
+                <h3> Pres. José Evaristo Uriburu 1735 , Recoleta , Ciudad Autónoma de Buenos Aires , Argentina.</h3>
+                <p> Las reservas para el Hotel y Restaurante están disponibles en línea las 24 horas del día. Nuestro equipo de reservas está aquí para ayudarlo todos los días de 9:00 a. m. a 10:00 p. m. con consultas sobre reservas y solicitudes personales.</p>
+                <h3 class> info@hotelbuenosaires.com</h3>
+                <h3 class> Teléfono de recepción : +54 11 5482-4544 </h3>
+                <h3 class> Teléfono de reservas : +54 11 5485-7877 </h3>
             </div>
-            <div class="form__numero">
-                <label> NÚMERO DE TELÉFONO </label>
-                <input name="numero"> <!-- Telefono -->
-            </div>
-            <div class="form__mensaje">
-                <label> SU MENSAJE </label>
-                <textarea> </textarea> <!-- Mensaje -->
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-            </form>
-        </section>
+            <div class="form">
+                <h2 > Déjanos tu mensaje </h2>
+                    <form method="post">
+                    <div class="form__nombre">
+                        <label> NOMBRE </label> <!-- Palabra antes del input -->
+                        <input name="nombre"> <!-- Nombre  -->
+                    </div>
+                    <div class="form__email">
+                        <label> DIRECCIÓN DE CORREO ELECTRÓNICO </label>
+                        <input name="email"><!-- Email -->
+                    </div>
+                    <div class="form__numero">
+                        <label> NÚMERO DE TELÉFONO </label>
+                        <input name="numero"> <!-- Telefono -->
+                    </div>
+                    <div class="form__mensaje">
+                        <label> SU MENSAJE </label>
+                        <textarea> </textarea> <!-- Mensaje -->
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                    </form>
+                </section>
+                </div>
+        </div>
+
     </main>
     <!-- pie de pagina -->
-    <footer class="fondo">
-        <p class="footer__parrafo"> Nuestras redes </p>
-        <a href="https://facebook.com"> <img class="footer__redes"src="../resources/facebook-square-brands.svg" alt="facebook"> </a>
-        <a href="https://instagram.com"> <img class="footer__redes" src="../resources/instagram-brands.svg" alt="instagram"> </a>
-        <p class="footer__parrafo"> 2022 Todos los derechos reservados </p>
+    <footer>
+        <section class="footer__contacto">
+            <h2 class="footer__titulo"> HOTEL BA </h2>
+            <ul class="footer__lista">
+                <li class="footer__item"> Dirección : Pres. José Evaristo Uriburu 1735 </li>
+                <li class="footer__item"> Recoleta </li>
+                <li class="footer__item"> Ciudad de Buenos Aires </li>
+                <li class="footer__item"> Argentina </li>
+                <li class="footer__item"> Tel : +54 11 5485-7877</li>
+        </section>
+        <section class="footer__enlaces">
+            <h2 class="footer__titulo"> Enlaces </h2>
+            <ul class="footer__lista">
+                <li class="footer__item"> <a href="../pages/habitaciones.html"> Habitaciones</a></li>
+                <li class="footer__item"> <a href="../pages/galeria.html"> Galeria </a></li>
+                <li class="footer__item"> <a href="../pages/servicios.html"> Servicios</a></li>
+                <li class="footer__item"> <a href="../pages/contacto.html"> Contacto</a></li>
+            </ul>
+        </div>
+        </section>
+        <section class="footer__redes">
+            <a href="https://facebook.com" target="_blank"> <img class ="footer__iconos"src="../resources/facebook-square-brands.svg" alt="facebook"> </a>
+            <a href="https://instagram.com" target="_blank"> <img class="footer__iconos" src="../resources/instagram-brands.svg" alt="instagram"> </a> 
+            <a href="https://youtube.com" target="_blank"> <img class="footer__iconos" src="../resources/youtube-square-brands.svg" alt="youtube"> </a>
+            <p class="footer__derechos"> 2022 Todos los derechos reservados </p>
+        </section>
     </footer>    
 </body>
 </html>
