@@ -115,7 +115,7 @@ button:hover{
 }
 
 .header__item:hover{
-    transform: scale(1.25, 1.25);
+    transform: scale(1.20, 1.20);
 
 }
 
@@ -954,7 +954,7 @@ header{
     width: 40px;
 }
 
-.galeria {
+.galeria{
     width: 80vw;
     height: auto;
     display: grid;
@@ -970,4 +970,4 @@ header{
                         "recepcion";
             margin: 30px;
             gap: 20px;
-        }
+}
