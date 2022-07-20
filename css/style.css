@@ -235,7 +235,7 @@ button:hover{
 }
 
 .principal__tarjeta:hover{
-    transform: translate(15px);
+    transform: translate(20px);
     box-shadow: 0 12px 16px rgb(44, 48, 66);
 }
 .tarjeta__comida{
