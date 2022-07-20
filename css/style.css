@@ -130,7 +130,7 @@ footer{
 }
 
 .servicios__subtitulo{
-    color: rgb(30, 33, 45);
+    color: rgb(17, 19, 26);
     text-align: left;
     letter-spacing: 2px;
     word-spacing: 3px;
@@ -153,16 +153,6 @@ footer{
     text-align: left;
 }
 
-
-.descuento{
-    background-color: rgb(182, 137, 115);
-}
-
-.descuento__info{
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-}
 
 .habitacion__imagen{
     width: 600px;
