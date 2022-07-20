@@ -231,7 +231,7 @@ button:hover{
     border: black solid 1px;
     border-radius: 15px;
     padding: 16px;
-    transition: all 0.20s;
+    transition: all 0.30s;
 
 }
 
@@ -969,6 +969,6 @@ header{
                         "desayuno"
                         "mesa-desayuno"
                         "recepcion";
-            margin: 30px;
-            gap: 20px;
+    margin: 30px;
+    gap: 20px;
 }
