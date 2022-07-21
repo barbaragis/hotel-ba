@@ -18,55 +18,78 @@
 </head>
 <body>
     <!-- fila de navegacion y logo -->
-    <header>      
-        <nav class="header__nav">
-            <a href="index.html"><img class="header__logo" src="resources/favicon.ico" alt="logo"> </a>
-            <ul class="header__lista">
-                <li class="header__item"> <a href="index.html"> Home </a></li>
-                <li class="header__item"> <a href="pages/habitaciones.html"> Habitaciones</a></li>
-                <li class="header__item"> <a href="pages/galeria.html"> Galeria </a></li>
-                <li class="header__item"> <a href="pages/servicios.html"> Servicios</a></li>
-                <li class="header__item"> <a href="pages/contacto.html"> Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg header__nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="resources/favicon.ico" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="header__lista navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class=" nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/habitaciones.html">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav> 
     </header>
     <!-- cierre de fila de logo y navegacion -->
     <main><!-- todo el contenido que no sea header o footer-->
-        <!-- seccion principal -->
         <section class="portada__principal">
-            <h1 class="portada__titulo"> Hotel BA </h1>
+            <h1 class="portada__titulo"> Hotel BA</h1>
             <div class="portada__boton"><button> CONOCÉNOS </button></div>
         </section>
-        <!-- segunda seccion -->
         <section class="texto">
             <article class="info__texto texto__contenido">
-                    <p>Hotel BA es un hotel de estilo urbano en el corazón de Recoleta, en la ciudad de Buenos Aires. 
-                        Se encuentra ubicado cerca de los principales puntos de interés de la ciudad, para que todos sus huéspedes puedan disfrutar de la misma en su plenitud. 
-                        Su atención personalizada y la excelente ubicación hacen de este hotel la mejor opción de alojamiento en Buenos Aires. 
-                        </p> 
+                <p>Hotel BA es un hotel de estilo urbano en el corazón de Recoleta, en la ciudad de Buenos Aires. 
+                Se encuentra ubicado cerca de los principales puntos de interés de la ciudad, para que todos sus huéspedes puedan disfrutar de la misma en su plenitud. 
+                Su atención personalizada y la excelente ubicación hacen de este hotel la mejor opción de alojamiento en Buenos Aires. 
+                </p> 
             </article>
         </section>
-        <section class="principal__tarjetas">
-            <article class="principal__tarjeta tarjeta__comida">
-                <img class="principal__img" src="resources/comida.jpg" alt="plato de comida">
-                <h2> Restaurante & Bar </h2>
-                <p>Desayuno buffet conformado por jugos naturales, café expreso, exquisitos tés, además de frutas, yogurt, cereales, embutidos y más.</p>
-                <button> Conocer más </button>
-            </article>
-            <article class="principal__tarjeta tarjeta__spa">
-                <img class="principal__img" src="resources/sauna1.jpg" alt="sauna">
-                <h2> Spa </h2>
-                <p>Si luego de un día de Buenos Aires y sus atractivos necesitas recargar energías, puedes nutrir tu cuerpo y espíritu en nuestro Spa...</p>
-                <button> Conocer más </button>
-            </article>
-            <article class="principal__tarjeta tarjeta__jardin">
-                <img class="principal__img"src="resources/jardin.jpg" alt="jardin">
-                <h2> Jardín & Piscina </h2>
-                <p>Diseñado para encontrar la tranquilidad que estás buscando.
-                    Contamos con un espacio verde con deck y piscina para disfutar del aire libre </p>
-                <button> Conocer más </button>
-            </article>
-        </section>
+        <div class="card-group">
+            <div class="principal__tarjeta  card">
+                <img src="resources/comida.jpg" class="card-img-top" alt="comida">
+                <div class="card-body">
+                    <h5 class="card-title"> Restaurante & Bar</h5>
+                    <p class="card-text"> Desayuno buffet conformado por jugos naturales, café expreso, exquisitos tés, además de frutas, yogurt, cereales, embutidos y más.</p>
+                    <p class="card-text"><small class="text-muted">BA</small></p>
+                </div>
+            </div>
+            <div class="principal__tarjeta card">
+                <img src="resources/sauna1.jpg" class="card-img-top" alt="sauna">
+                <div class="card-body">
+                    <h5 class="card-title"> Spa & Sauna</h5>
+                    <p class="card-text">Si luego de un día de Buenos Aires y sus atractivos necesitas recargar energías, puedes nutrir tu cuerpo y espíritu en nuestro Spa...</p>
+                    <p class="card-text"><small class="text-muted">BA</small></p>
+                </div>
+            </div>
+            <div class="principal__tarjeta card">
+                <img src="resources/jardin.jpg" class="card-img-top" alt="jardin">
+                <div class="card-body">
+                    <h5 class="card-title">Jardín & Piscina</h5>
+                    <p class="card-text">Diseñado para encontrar la tranquilidad que estás buscando.
+                    Contamos con un espacio verde con deck y piscina para disfutar del aire libre</p>
+                    <p class="card-text"><small class="text-muted">BA</small></p>
+                </div>
+            </div>
+        </div>
         <section class="ws">
             <img class="ws__imagen" src="resources/WhatsApp.svg.png" alt="whatsapp">
         </section>
@@ -74,7 +97,7 @@
     <!-- pie de pagina -->
     <footer>
         <section class="footer__contacto">
-            <h2 class="footer__titulo"> HOTEL BA </h2>
+            <h2 class="footer__titulo"> Hotel Ba </h2>
             <ul class="footer__lista">
                 <li class="footer__item"> Dirección : Pres. José Evaristo Uriburu 1735 </li>
                 <li class="footer__item"> Recoleta </li>

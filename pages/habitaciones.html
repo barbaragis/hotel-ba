@@ -17,18 +17,36 @@
     <title> Hotel BA </title>
 </head>
 <body>
-    <!-- fila de navegacion y logo -->
-    <header>      
-        <nav class="header__nav">
-            <a href="../index.html"><img class="header__logo" src="../resources/favicon.ico" alt="logo"> </a>
-            <ul class="header__lista">
-                <li class="header__item"> <a href="../index.html"> Home </a></li>
-                <li class="header__item"> <a href="#"> Habitaciones </a></li>
-                <li class="header__item"> <a href="galeria.html"> Galeria </a></li>
-                <li class="header__item"> <a href="servicios.html"> Servicios </a></li>
-                <li class="header__item"> <a href="contacto.html"> Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg header__nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../resources/favicon.ico" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="header__lista navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class=" nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav> 
     </header>
     <!-- cierre de fila de logo y navegacion -->
     <main>
@@ -49,7 +67,8 @@
                 </div>
             </article>
         </section>
-            <section class="habitaciones">
+
+            <!-- <section class="habitaciones">
                 <article class="habitaciones__info" >
                     <div class="habitaciones__contenido" >
                         <h2> Habitación Deluxe </h2>
@@ -66,7 +85,7 @@
                     </div>    
                     <img class="habitacion__img" src="../resources/doble.jpg" alt="cama deluxe">
                 </article>
-            </section>
+            </section> -->
             <section class="habitaciones">
                 <article class="habitaciones__info" >
                     <div class="habitaciones__contenido" >
