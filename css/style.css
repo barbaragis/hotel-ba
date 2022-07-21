@@ -226,8 +226,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.30s;
-    margin: 10px;
 
 }
 
