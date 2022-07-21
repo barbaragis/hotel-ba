@@ -230,7 +230,7 @@ footer{
 }
 
 .principal__tarjeta:hover{
-    transform: translate(20px);
+    transform: translate(5px);
     box-shadow: 0 12px 16px rgb(44, 48, 66);
 }
 .tarjeta__comida{
