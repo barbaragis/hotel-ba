@@ -145,12 +145,10 @@ footer{
 
 .portada__titulo {
     font-family: 'Parisienne', cursive;
-    font-size: 30px;
     grid-column: 2/3;
-    grid-row: 1/2;
-    color: white;
-    text-shadow: 2px 3px 5px gray;
-    font-style: italic;
+    grid-row: 2/2;
+    color: black;
+    text-shadow: 2px 3px 10px white;
     font-size: 80px;
     display: flex;
     justify-content:center;
@@ -160,9 +158,10 @@ footer{
 
 .portada__boton {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/3;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 
 }
 
@@ -515,6 +514,27 @@ footer{
 
 /* SERVICIOS */
 
+.servicios__portada{
+    display: grid;
+    height: 30vh;
+    background-image:url("../resources/servicios.jpg");
+    background-size: cover;
+    background-position:center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+}
+
+.servicios__portada h1{
+    font-family: 'Parisienne', cursive;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .servicios__tarjetas{
     display: grid;
@@ -773,10 +793,14 @@ h4 {
 }
 
 .carrousel__altura{
-    height: 700px;
+    height: 80vh;
 
 }
 
+.boton__carrousel{
+
+
+}
 
 .card__titulo{
     font-style: italic;
@@ -797,6 +821,10 @@ h4 {
 
 }
 
+.boton__habitaciones{
+    width: 50px;
+    height: 50px;
+}
 
 /* MEDIA QUERIE DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -918,6 +946,19 @@ h4 {
 
     .servicios__img{
         width: 20%;
+    }
+
+    .servicios__portada{
+        display: grid;
+        height: 20vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+    }
+    
+    .servicios__portada h1{
+        font-size: 25px;
+        grid-column: 1/1;
+        grid-row: 1/1;
     }
 
     footer{
