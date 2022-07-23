@@ -70,10 +70,14 @@ button{
     background-color:grey;
     color: white;
     border: solid 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
 }
 
 button:hover{
-    transform: scale(1.30);
+    background-color: rgb(182, 137, 115);
 }
 
 footer{
@@ -106,13 +110,13 @@ footer{
 }
 
 .header__item{
-    display: inline;
     font-family: 'Open Sans', sans-serif;
+    display: inline;
     font-weight: bold;
     letter-spacing: 1px;
     position: sticky;
     top: 0px;
-    padding: 20px;
+    padding: 5px;
 
 
 }
@@ -129,8 +133,8 @@ footer{
 
 .portada__principal{
     display: grid;
-    height: 80vh;
-    background-image: url("../resources/entrada.jpg");
+    height: 90vh;
+    background-image: url("../resources/portada-principal.jpg");
     background-size: cover;
     background-position: center;
     grid-template-columns: 1fr 2fr 1fr;
@@ -140,10 +144,12 @@ footer{
 
 
 .portada__titulo {
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
     grid-column: 2/3;
     grid-row: 1/2;
-    color: black;
-    text-shadow: 3px 2px 3px black;
+    color: white;
+    text-shadow: 2px 3px 5px gray;
     font-style: italic;
     font-size: 80px;
     display: flex;
@@ -161,8 +167,8 @@ footer{
 }
 
 .portada__boton button {
-    width: 150px;
-    height: 70px;
+    width: 120px;
+    height: 50px;
 }
 
 .boton button{
@@ -221,6 +227,8 @@ footer{
 }
 
 .principal__tarjeta{ 
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
     background-color: rgb(44, 48, 66);
     display: flex;
     flex-direction: column;
@@ -237,6 +245,7 @@ footer{
     transform: translate(5px);
     box-shadow: 0 12px 16px rgb(44, 48, 66);
 }
+
 .tarjeta__comida{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -257,7 +266,7 @@ footer{
 }
 
 
-.principal__tarjeta h5{
+.card__titulo {
     color:rgb(182, 137, 115);
     text-align: center;
     margin-bottom: 10px;
@@ -265,18 +274,16 @@ footer{
     }
 
 
-.principal__tarjeta p{
+.card__texto{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
     color:white;
     padding: 0 1rem;
     font-size: 16px;
     text-align: center;
     line-height: 20px;
     margin: 10px 10px 0px 0px;
-}
-
-.principal__tarjetas p{
-    font-size: 16px;
-    text-align: center;
 }
 
 .ws{
@@ -288,7 +295,22 @@ footer{
 }
 
 .ws__imagen{
-    width: 70px;
+    width: 60px;
+}
+
+
+
+.accordion-item{
+    text-align: center;
+}
+
+.accordion-button{
+    text-align: center;
+
+}
+
+.accordion__fondo{
+    background-color: rgb(173, 172, 171);
 }
 
 /* GALERIA */
@@ -362,7 +384,26 @@ footer{
 
 /* HABITACIONES */
 
+.habitacion__portada{
+    display: grid;
+    height: 30vh;
+    background-image:url("../resources/habitacion-titulo.jpg");
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+}
 
+.habitacion__portada h1{
+    font-family: 'Parisienne', cursive;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .habitaciones__info{
     display: flex;
     justify-content: center;
@@ -737,8 +778,7 @@ h4 {
 }
 
 
-.card-title{
-    color:aliceblue;
+.card__titulo{
     font-style: italic;
 }
 
@@ -746,6 +786,16 @@ h4 {
     background-color: rgb(44, 48, 66);
 }
 
+
+
+
+.boton__servicios{
+    background-color: rgb(44, 48, 66);
+    color: white;
+    width: 250px;
+    height: 40px;
+
+}
 
 
 /* MEDIA QUERIE DE CELULAR */
@@ -760,6 +810,9 @@ h4 {
     
     }
     
+    .header__item{
+        padding: 5px;
+    }
     .header__lista{
         flex-direction: column;
         flex-grow: 0;
@@ -768,6 +821,7 @@ h4 {
     }
     
     .portada__principal{
+        height: 30vh;
         display: grid;
         background-position: center;
         grid-template-columns: 1fr;
