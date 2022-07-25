@@ -518,7 +518,7 @@ footer{
     height: 30vh;
     background-image:url("../resources/servicios.jpg");
     background-size: cover;
-    background-position:center;
+    background-position:bottom;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr ;
 }
@@ -527,7 +527,7 @@ footer{
     font-family: 'Parisienne', cursive;
     font-size: 60px;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 3px black;
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
@@ -792,7 +792,7 @@ h4 {
 }
 
 .carrousel__altura{
-    height: 80vh;
+    height: 90vh;
 
 }
 
