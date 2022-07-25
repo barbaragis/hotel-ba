@@ -15,7 +15,7 @@ header{
 body{
     width: 100%;
     height: 100%;
-    background-image: white;
+    background-image: url("../resources/fondo-blanco.webp")
 }
 
 ul{
@@ -73,7 +73,7 @@ button{
     cursor: pointer;
     text-transform: uppercase;
     transition: .3s ease all;
-    border-radius: 5px;
+    
 }
 
 button:hover{
@@ -133,8 +133,8 @@ footer{
 
 .portada__principal{
     display: grid;
-    height: 90vh;
-    background-image: url("../resources/portada-principal.jpg");
+    height: 80vh;
+    background-image: url("../resources/portada.jpg");
     background-size: cover;
     background-position: center;
     grid-template-columns: 1fr 2fr 1fr;
@@ -146,10 +146,10 @@ footer{
 .portada__titulo {
     font-family: 'Parisienne', cursive;
     grid-column: 2/3;
-    grid-row: 2/2;
-    color: black;
-    text-shadow: 2px 3px 10px white;
-    font-size: 80px;
+    grid-row: 1/2;
+    color:white;
+    text-shadow: 2px 1px 2px black;
+    font-size: 90px;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -158,7 +158,7 @@ footer{
 
 .portada__boton {
     grid-column: 2/3;
-    grid-row: 3/3;
+    grid-row: 2/3;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -228,7 +228,8 @@ footer{
 .principal__tarjeta{ 
     font-family: 'Playfair Display', serif;
     font-style: normal;
-    background-color: rgb(44, 48, 66);
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #000000 0%, #4e3737 50%, #ffffff 100%);    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,9 +309,7 @@ footer{
 
 }
 
-.accordion__fondo{
-    background-color: rgb(173, 172, 171);
-}
+
 
 /* GALERIA */
 
@@ -797,10 +796,6 @@ h4 {
 
 }
 
-.boton__carrousel{
-
-
-}
 
 .card__titulo{
     font-style: italic;
@@ -818,6 +813,7 @@ h4 {
     color: white;
     width: 250px;
     height: 40px;
+    border-radius: 10px;
 
 }
 
@@ -882,8 +878,8 @@ h4 {
     }
     
     .portada__boton button {
-        width: 80px;
-        height: 60px;
+        width: 90px;
+        height: 50px;
     }
 
     .carrousel__altura{
@@ -902,7 +898,28 @@ h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        word-spacing: 0px;
     
+    }
+
+    .texto__contenido{
+        font-size: 10px;
+    }
+
+    .texto__contenido{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        
+        
+    }
+    
+    .info__texto p{
+        color:black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0px;
     }
 
     .principal__tarjetas{
@@ -936,12 +953,12 @@ h4 {
     }
     
     .principal__tarjeta img{
-        width: 200px;
+        width: 330px;
         height: 200px;
     }
 
     .ws__imagen{
-        width: 30px;
+        width: 40px;
     }
 
     .servicios__img{
