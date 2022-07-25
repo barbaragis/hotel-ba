@@ -31,20 +31,20 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="header__lista navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="header__lista navbar-nav ">
+                    <li class="header__item">
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
-                    <li class=" nav-item">
+                    <li class="header__item">
                         <a class="nav-link active" aria-current="page" href="#">Habitaciones</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="header__item">
                         <a class="nav-link" href="../pages/galeria.html">Galeria</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="header__item">
                         <a class="nav-link" href="../pages/servicios.html">Servicios</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="header__item">
                         <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -54,138 +54,95 @@
     </header>
     <!-- cierre de fila de logo y navegacion -->
     <main>
-<!--         <section class="principal">
-            <article class="principal__info">
-                <img class="principal__imagen" src="../resources/cuadros.jpg" alt="cuadros en habitacion">
-                <div class="principal__texto">
-                    <h2> Habitaciones </h2>
-                    <p>Las 20 habitaciones del HOTEL BA son adecuadas para familias jóvenes, estudiantes que viajan y cualquier persona que busque un alojamiento asequible en Recoleta. 
-                        Con cómodas camas individuales y dobles grandes, nuevos televisores de pantalla plana. 
-                        Los alojamientos de nuestro Boutique Hotel se encuentran entre los mejores de la ciudad de Buenos Aires para viajeros con presupuesto limitado.
-                    </p>
-                    <ul > 
-                        <li > CHECK-IN a partir de las 16 PM </li>
-                        <li > CHECK-OUT hasta las 11 AM  </li>
-                        <li >RECEPCIÓN de 9 AM a 10 PM </li> 
-                    </ul>
-                </div>
+        <section class=" habitacion__portada" >
+            <h1> Habitaciones </h1>
+        </section>
+        <section>
+            <article class="info__texto texto__contenido">
+                <p>Las 20 habitaciones del HOTEL BA son adecuadas para familias jóvenes, estudiantes que viajan y cualquier persona que busque un alojamiento asequible en Recoleta.
+                Con cómodas camas individuales y dobles y nuevos televisores de pantalla plana con reconocidas plataformas de series y películas. </p>
+                <img class="vector" src="../resources/vector.png">  
+                <ul class="lista__horarios"> 
+                    <li > CHECK-IN a partir de las 16 PM </li>
+                    <li > CHECK-OUT hasta las 11 AM  </li>
+                    <li >RECEPCIÓN de 9 AM a 10 PM </li> 
+                </ul>    
             </article>
-        </section> -->
-    <section class="habitacion__portada">
-        <h1 class="animate__animated animate__pulse"> Habitaciones </h1>
-    </section>
-    <ul class="list-group">
-        <li class="list-group-item">Desayuno incluído </li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-    </ul>
-    <section class="habitaciones">
-        <article class="habitaciones__info" >
-            <div class="habitaciones__contenido" >
-                <h2> Habitación Deluxe </h2>
-                <ul>
-                    <li class="lista"> Habitación doble de 60 m² para 2 personas </li>
-                    <li class="modelo__item" > Cuarto de baño privado con bañera </li>
-                    <li class="modelo__item" > Cama King Size y almohadas Simmons Beauty Rest </li>
-                    <li class="modelo__item" > Desayuno incluido </li>
-                    <li class="modelo__item"> TV de pantalla plana con HBO y Netflix gratuito </li>
-                    <li class="modelo__item"> Caja de seguridad </li>
-                    <li class="modelo__item"> Espacio de trabajo con silla </li>
-                    <li class="modelo__item"> Balcón hacia la calle</li> 
+        </section>
+        <section>
+            <article class="habitacion__uno animate__animated animate__fadeIn animate__delay-0.5	0.5s">
+                <div class="info__texto principal__tarjetas">
+                    <h2 class="titulo__habitacion"> Habitación Deluxe </h2>
+                    <ul class="lista__habitacion">
+                        <li > Habitación doble de 60 m² para 2 personas </li>
+                        <li > Cuarto de baño privado con bañera </li>
+                        <li > Cama King Size y almohadas Simmons Beauty Rest </li>
+                        <li > Desayuno incluido </li>
+                        <li > TV de pantalla plana con HBO y Netflix gratuito </li>
+                        <li > Caja de seguridad </li>
+                        <li > Espacio de trabajo con silla </li>
+                        <li > Balcón hacia la calle</li> 
+                    </ul>
+                    <img class="habitacion__img" src="../resources/doble.jpg">
+                </div>
+            </article> 
+            <article  class="habitacion__dos animate__animated animate__fadeIn animate__delay-1s	1s">
+                <div class="info__texto principal__tarjetas">
+                    <h2 class="titulo__habitacion"> Habitación Doble Superior </h2>
+                    <ul class="lista__habitacion">
+                        <li > Habitación doble de 40 m² para 2 personas </li>
+                        <li > Cuarto de baño privado con bañera </li>
+                        <li > Habitacion equipada con cama queen size</li>
+                        <li >Desayuno incluido </li>
+                        <li > Tv lcd 32" </li>
+                        <li > Caja de seguridad </li>
+                        <li > Espacio de trabajo con silla </li>
                 </ul>
+                <img class="habitacion__img"src="../resources/doble-superior.jpg" alt="cama deluxe">
+            </div>
+        </article>
+        <article  class=" habitacion__tres animate__animated animate__fadeIn animate__delay-2s	2s">
+            <div class="info__texto principal__tarjetas">
+                <h2 class="titulo__habitacion"> Habitación Doble Classic  </h2>
+                <ul class="lista__habitacion">
+                    <li class="modelo__item"> Habitación doble de 40m² para 2 personas </li>
+                    <li class="modelo__item"> Cuarto de baño privado con bañera </li>
+                    <li class="modelo__item">Desayuno incluido </li>
+                    <li class="modelo__item"> Tv lcd 32" </li>
+                    <li class="modelo__item"> Caja de seguridad </li>
+                </ul>
+                <img class="habitacion__img" src="../resources/cuartodoble.jpg" alt="cama deluxe">
             </div>
         </article>
     </section>
+    <section>
+        <article  class=" habitacion__cuatro animate__animated animate__fadeIn animate__delay-3s	3s">
+            <div class="info__texto principal__tarjetas">
+                <h2 class="titulo__habitacion"> Habitación Simple Classic  </h2>
+                <ul class="lista__habitacion" >
+                    <li class="modelo__item"> Habitación simple para 1 persona </li>
+                    <li class="modelo__item">Desayuno incluido </li>
+                    <li class="modelo__item"> Tv lcd 32" </li>
+                    <li class="modelo__item"> Caja de seguridad </li>
+                </ul>
+                <img class="habitacion__img" src="../resources/hab-simple.jpg" alt="cama deluxe">
+            </div>
+        </article>
+    </section>
+    <section class="info">
+        <h3> ¿ Necesita ayuda? </h3>
+        <h3>Háganos saber si podemos ayudarlo con consultas de reserva, solicitud personal o cualquier otra información.</h3>
+        <div class="portada__boton">
+            <a href="../pages/contacto.html">
+            <button> CONTÁCTENOS </button>
+            </a>
+        </div>
 
-<!--     <section class="habitaciones">
-                <article class="habitaciones__info" >
-                    <div class="habitaciones__contenido" >
-                        <h2> Habitación Deluxe </h2>
-                        <ul>
-                            <li class="lista"> Habitación doble de 60 m² para 2 personas </li>
-                            <li class="modelo__item" > Cuarto de baño privado con bañera </li>
-                            <li class="modelo__item" > Cama King Size y almohadas Simmons Beauty Rest </li>
-                            <li class="modelo__item" > Desayuno incluido </li>
-                            <li class="modelo__item"> TV de pantalla plana con HBO y Netflix gratuito </li>
-                            <li class="modelo__item"> Caja de seguridad </li>
-                            <li class="modelo__item"> Espacio de trabajo con silla </li>
-                            <li class="modelo__item"> Balcón hacia la calle</li> 
-                        </ul>
-                        <img class="habitacion__img" src="../resources/doble.jpg" alt="cama deluxe">
-                    </div>
-                </article>
-            </section>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="habitacion__img" src="../resources/doble.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="habitacion__img" src="../resources/doble.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="habitacion__img" src="../resources/doble.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-              </div>
-            <section class="habitaciones">
-                <article class="habitaciones__info" >
-                    <div class="habitaciones__contenido" >
-                        <h2> Habitacion Doble Superior </h2>
-                        <ul>
-                            <li class="modelo__item"> Habitación doble de 40 m² para 2 personas </li>
-                            <li class="modelo__item"> Cuarto de baño privado con bañera </li>
-                            <li class="modelo__item"> Habitacion equipada con cama queen size</li>
-                            <li class="modelo__item">Desayuno incluido </li>
-                            <li class="modelo__item"> Tv lcd 32" </li>
-                            <li class="modelo__item"> Caja de seguridad </li>
-                            <li class="modelo__item"> Espacio de trabajo con silla </li>
-                        </ul>
-                    </div>
-                    <div class="carouselExampleSlidesOnly" 
-                    <img src="../resources/deluxe.jpg" alt="cama"c>
-                </div>
-                </article>
-            </section>
-            <section class="habitaciones">
-                <article class="habitaciones__info" >
-                    <div class="habitaciones__contenido" >
-                        <h2 >Habitacion Doble Classic </h2>
-                        <ul class="modelo__lista">
-                            <li class="modelo__item"> Habitación doble de 40m² para 2 personas </li>
-                            <li class="modelo__item"> Cuarto de baño privado con bañera </li>
-                            <li class="modelo__item">Desayuno incluido </li>
-                            <li class="modelo__item"> Tv lcd 32" </li>
-                            <li class="modelo__item"> Caja de seguridad </li>
-                        </ul>
-                    </div>
-                    <img src="../resources/cuartodoble.jpg" alt="cama doble">
-                </article>
-            </section>
-            <section class="habitaciones">
-                <article class="habitaciones__info" >
-                    <div class="habitaciones__contenido" >
-                        <h2 >Habitación Simple Classic  </h2>
-                        <ul >
-                            <li class="modelo__item"> Habitación simple para 1 persona </li>
-                            <li class="modelo__item">Desayuno incluido </li>
-                            <li class="modelo__item"> Tv lcd 32" </li>
-                            <li class="modelo__item"> Caja de seguridad </li>
-                        </ul>
-                    </div>
-                    <img src="../resources/habitacion.jpg" alt="habitacion simple">
-                </article>
-            </section> -->
-            <section class="info">
-                <h3> ¿ Necesita ayuda? </h3>
-                <h3>Háganos saber si podemos ayudarlo con consultas de reserva, solicitud personal o cualquier otra información.</h3>
-                <div class="boton">
-                    <button> CONTÁCTENOS </button>
-                </div>
-        </section>
-    </main>
+    </section>
+    <section class="ws">
+        <a href="https://web.whatsapp.com/%F0%9F%8C%90/es" target="_blank"> <img class="ws__imagen" src="../resources/WhatsApp.svg.png" alt="whatsapp"> </a>
+    </section>
+</main>
     <!-- pie de pagina -->
     <footer>
         <section class="footer__contacto">

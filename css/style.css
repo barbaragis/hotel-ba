@@ -15,7 +15,9 @@ header{
 body{
     width: 100%;
     height: 100%;
-    background-image: url("../resources/fondo-blanco.webp")
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 ul{
@@ -46,6 +48,7 @@ h3{
     letter-spacing: 2px;
     word-spacing: 3px;
 }
+
 
 
 
@@ -178,6 +181,9 @@ footer{
 
 }
 
+.vector{
+    width: 200px;
+}
 
 .texto{
     display: grid;
@@ -228,8 +234,7 @@ footer{
 .principal__tarjeta{ 
     font-family: 'Playfair Display', serif;
     font-style: normal;
-    background-color: #000000;
-    background-image: linear-gradient(0deg, #000000 0%, #4e3737 50%, #ffffff 100%);    
+    background-color: rgb(44, 48, 66);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,6 +387,8 @@ footer{
 
 /* HABITACIONES */
 
+
+
 .habitacion__portada{
     display: grid;
     height: 30vh;
@@ -402,94 +409,55 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.habitaciones__info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
-.habitaciones__info img{
-    width: 600px;
-    height: 400px;
-    margin: 40px;
-}
-
-.habitaciones__contenido{
-    width: 80%;
-    padding: 30px;
-}
-
-.habitaciones__contenido h2{
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 25px;
-
-}
-
-.habitacion__imagen{
-    width: 400px;
-    height: auto;
-}
-
-.habitaciones__contenido ul li{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    list-style: none;
-    text-align: center;
-    line-height: 40px;
-
-}
-
-.principal{
-    padding: 20px;
-    background-color: rgb(44, 48, 66);
-
-}
-
-.principal__info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-}
-
-
-.principal__info img {
-    width: 70%;
-    object-fit: cover;
-}
-
-
-.principal__texto h2{
-    color: rgb(182, 137, 115);
-    font-size: 50px;
-    font-style: italic;
-    text-shadow: 3px 2px 3px black;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.principal__texto p{
-    color:white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 45px;
-    text-align: center;
-    letter-spacing: 0px;
-    margin-right: 10px;
-}
-
-.principal__texto ul li{
-    color:white;
-    font-size: 20px;
+.lista__horarios{
     font-family: 'Playfair Display', serif;
-    line-height: 45px;
-    text-align: center;
-    letter-spacing: 0px;
-    margin-top: 20px;
+    font-size: 20px;
+    list-style: none;
+    line-height: 40px;
+    font-weight: bolder;
 }
+.habitacion__uno{
+    background-color: rgb(44, 48, 66);
+    color: white;
+
+}
+
+.habitacion__dos{
+    background-color: white;
+
+}
+
+.habitacion__tres{
+    background-color: rgb(44, 48, 66);
+    color: white;
+
+}
+
+.habitacion__cuatro{
+    background-color: white;
+
+}
+
+
+.titulo__habitacion{
+    font-family: 'Parisienne', cursive;
+    font-size: 45px;
+    color: rgb(182, 137, 115);
+}
+
+.lista__habitacion{
+    list-style: circle;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.habitacion__img{
+    margin-bottom: 0px;
+    width: 30vw;
+
+}
+
 
 .info{
     display: flex;
@@ -504,12 +472,7 @@ footer{
     align-items: center;
 }
 
-.subtitulo{
-    color:white;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-}
+
 
 /* SERVICIOS */
 
@@ -792,10 +755,17 @@ h4 {
 }
 
 .carrousel__altura{
-    height: 90vh;
+    height: 70vh;
 
 }
 
+
+.carousel__subtitulo{
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
 
 .card__titulo{
     font-style: italic;
@@ -883,7 +853,7 @@ h4 {
     }
 
     .carrousel__altura{
-        height: 300px;
+        height: 500px;
     }
     
     .texto{
