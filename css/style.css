@@ -318,13 +318,26 @@ footer{
 
 /* GALERIA */
 
-.main__titulo{
-    color: rgb(182, 137, 115);
-    font-size: 45px;
-    font-style: italic;
-    text-shadow: 3px 2px 3px black;
-    text-align: center;
+.galeria__portada{
+    display: grid;
+    height: 30vh;
+    background-image:url("../resources/entrada.jpg");
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
     margin-bottom: 20px;
+}
+
+.galeria__portada h1{
+    font-family: 'Parisienne', cursive;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .galeria {
@@ -372,7 +385,6 @@ footer{
 }
 
 .galeria__fotos {
-    border: black solid 3px;
     border-radius: 10px;
     height: 100%;
 }
@@ -452,12 +464,6 @@ footer{
     letter-spacing: 1px;
 }
 
-.habitacion__img{
-    margin-bottom: 0px;
-    width: 30vw;
-
-}
-
 
 .info{
     display: flex;
@@ -472,7 +478,9 @@ footer{
     align-items: center;
 }
 
-
+.link{
+    color: rgb(182, 137, 115);
+}
 
 /* SERVICIOS */
 
@@ -815,7 +823,7 @@ h4 {
     }
     
     .portada__principal{
-        height: 30vh;
+        height: 15vh;
         display: grid;
         background-position: center;
         grid-template-columns: 1fr;
@@ -931,6 +939,40 @@ h4 {
         width: 40px;
     }
 
+    .habitacion__portada{
+        display: grid;
+        height: 10vh;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+    }
+    
+    .habitacion__portada h1{
+        font-size: 30px;
+        grid-column: 1/1;
+        grid-row: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo__habitacion{
+        font-family: 'Parisienne', cursive;
+        font-size: 25px;
+        color: rgb(182, 137, 115);
+    }
+    
+    .lista__habitacion{
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: center;
+        list-style: none;
+    }
+
+    .info h3{
+        font-size: 16px;
+        line-height: 30px;
+    }
     .servicios__img{
         width: 20%;
     }
@@ -947,6 +989,7 @@ h4 {
         grid-column: 1/1;
         grid-row: 1/1;
     }
+
 
     footer{
         display: block;
@@ -1002,85 +1045,3 @@ h4 {
         gap: 20px;
     }
 
-    /* MEDIA QUERIE DE TABLET */
-@media (min-width: 576px) and (max-width: 992px){
-
-/* index */
-
-header{
-    height: auto;
-}
-.header__nav{
-    flex-direction: row;
-}
-
-.header__lista{
-    flex-direction: row;
-    flex-grow: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.portada__principal{
-    display: grid;
-    height: auto;
-    grid-template-columns: 1fr  1fr ;
-    grid-template-rows: 1fr ;
-}
-
-
-.principal__tarjetas{
-    display: grid;  
-    grid-template-columns: 1fr;
-    grid-template-rows: auto ;
-    gap:5px;
-    margin:10px;
-}
-.tarjeta__comida{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin: 10px;
-
-}
-
-.tarjeta__spa{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin: 10px;
-
-}
-
-
-.tarjeta__jardin{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin: 10px;
-
-}
-
-.principal__tarjeta img{
-    width: 200px;
-    height: 200px;
-}
-
-.ws__imagen{
-    width: 40px;
-}
-
-.galeria{
-    width: 80vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "pasillo"
-                        "habitacion" 
-                        "hab-simple" 
-                        "cuartodoble"
-                        "cuadros" 
-                        "desayuno"
-                        "mesa-desayuno"
-                        "recepcion";
-    margin: 30px;
-    gap: 20px;
-}

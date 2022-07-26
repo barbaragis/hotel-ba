@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../resources/favicon.ico" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
             <article class="info__texto texto__contenido">
                 <p>Las 20 habitaciones del HOTEL BA son adecuadas para familias jóvenes, estudiantes que viajan y cualquier persona que busque un alojamiento asequible en Recoleta.
                 Con cómodas camas individuales y dobles y nuevos televisores de pantalla plana con reconocidas plataformas de series y películas. </p>
-                <img class="vector" src="../resources/vector.png">  
+                <img class="vector" src="../resources/vector.png" alt="vector ">  
                 <ul class="lista__horarios"> 
                     <li > CHECK-IN a partir de las 16 PM </li>
                     <li > CHECK-OUT hasta las 11 AM  </li>
@@ -69,8 +69,8 @@
                 </ul>    
             </article>
         </section>
-        <section>
-            <article class="habitacion__uno animate__animated animate__fadeIn animate__delay-0.5	0.5s">
+        <section class="habitaciones">
+            <article class="habitacion__uno animate__animated animate__fadeIn animate__delay-1s	1s">
                 <div class="info__texto principal__tarjetas">
                     <h2 class="titulo__habitacion"> Habitación Deluxe </h2>
                     <ul class="lista__habitacion">
@@ -83,7 +83,10 @@
                         <li > Espacio de trabajo con silla </li>
                         <li > Balcón hacia la calle</li> 
                     </ul>
-                    <img class="habitacion__img" src="../resources/doble.jpg">
+                    <div>
+                        <a class="link boton" href="../pages/galeria.html"> Ver más </a>
+                    <img class="galeria" src="../resources/deluxe.jpg" alt="habitacion-suite">
+                    </div>
                 </div>
             </article> 
             <article  class="habitacion__dos animate__animated animate__fadeIn animate__delay-1s	1s">
@@ -98,10 +101,13 @@
                         <li > Caja de seguridad </li>
                         <li > Espacio de trabajo con silla </li>
                 </ul>
-                <img class="habitacion__img"src="../resources/doble-superior.jpg" alt="cama deluxe">
+                <div>
+                    <a class="link boton" href="../pages/galeria.html"> Ver más </a>
+                <img class="galeria"src="../resources/doble-superior.jpg" alt="habitacion-superior">
+                </div>
             </div>
         </article>
-        <article  class=" habitacion__tres animate__animated animate__fadeIn animate__delay-2s	2s">
+        <article  class=" habitacion__tres animate__animated animate__fadeIn animate__delay-1s	1s">
             <div class="info__texto principal__tarjetas">
                 <h2 class="titulo__habitacion"> Habitación Doble Classic  </h2>
                 <ul class="lista__habitacion">
@@ -111,12 +117,13 @@
                     <li class="modelo__item"> Tv lcd 32" </li>
                     <li class="modelo__item"> Caja de seguridad </li>
                 </ul>
-                <img class="habitacion__img" src="../resources/cuartodoble.jpg" alt="cama deluxe">
+                <div>
+                    <a class="link boton" href="../pages/galeria.html"> Ver más </a>
+                <img class="galeria" src="../resources/cuartodoble.jpg" alt="habitacion-doble">
+                </div>
             </div>
         </article>
-    </section>
-    <section>
-        <article  class=" habitacion__cuatro animate__animated animate__fadeIn animate__delay-3s	3s">
+        <article  class=" habitacion__cuatro animate__animated animate__fadeIn animate__delay-2s 2s">
             <div class="info__texto principal__tarjetas">
                 <h2 class="titulo__habitacion"> Habitación Simple Classic  </h2>
                 <ul class="lista__habitacion" >
@@ -125,10 +132,14 @@
                     <li class="modelo__item"> Tv lcd 32" </li>
                     <li class="modelo__item"> Caja de seguridad </li>
                 </ul>
-                <img class="habitacion__img" src="../resources/hab-simple.jpg" alt="cama deluxe">
+                <div>
+                    <a class="link boton" href="../pages/galeria.html"> Ver más </a>
+                    <img class="galeria" src="../resources/hab-simple.jpg" alt="habitacion-simple">
+                </div>
             </div>
         </article>
     </section>
+    
     <section class="info">
         <h3> ¿ Necesita ayuda? </h3>
         <h3>Háganos saber si podemos ayudarlo con consultas de reserva, solicitud personal o cualquier otra información.</h3>
