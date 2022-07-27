@@ -581,45 +581,40 @@ footer{
 
 /* CONTACTO */ 
 
-.bloque{  
+.contacto__portada{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr  ;
-    grid-template-rows: 1fr 2fr 1fr ;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-items: stretch;
-    grid-template-areas: "mapa info info "
-                        "mapa info info"
-                        "form  form none ";
-                    }
-
-.mapa { 
-    grid-area: mapa; 
-
+    height: 30vh;
+    background-image: url("../resources/contacto.jpg");
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    margin-bottom: 20px;
 }
 
-.titulo { 
-    grid-area: titulo;
+.contacto__portada h1{
+    font-family: 'Parisienne', cursive;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.info { 
-    grid-area: info;
-    margin: 20px;
-
-    } 
-
-
-.form { 
-    grid-area: form; 
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mapa__imagen{
+    width:800px;
+    height: 500px;
+    padding: 30px;
 }
 
-.subtitulo { 
-    grid-area: subtitulo; 
-}
-
-.datos { 
-    grid-area: datos; 
-}
 
 
 
@@ -630,6 +625,16 @@ footer{
     text-shadow: 3px 2px 3px black;
     text-align: center;
     margin-bottom: 25px;
+}
+
+.info h2{
+    color: rgb(182, 137, 115);
+    font-size: 35px;
+    font-style: italic;
+    text-shadow: 3px 2px 3px black;
+    text-align: center;
+    margin-bottom: 25px;
+
 }
 
 .info h3{
@@ -657,11 +662,7 @@ footer{
     width: 500px;
 }
 
-.mapa__imagen{
-    width:600px;
-    height: 700px;
-    padding: 30px;
-}
+
 
 div label{
     color: rgb(182, 137, 115);
