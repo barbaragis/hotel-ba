@@ -1,0 +1,39 @@
+header{
+    position: sticky;
+    top:0px;
+
+    .header{
+        &__nav{
+            display: flex;
+            position: sticky;
+            flex-wrap: wrap;
+            background-color: $color-principal;
+        }
+
+
+        &__lista{
+            display: flex;
+            list-style: none;
+            padding: 0px 16px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: flex-end;
+            flex-grow: 1;
+    
+        }
+
+        &__item{
+            font-family: $font-principal;
+            display: inline;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: sticky;
+            top: 0px;
+            padding: 5px;
+        }
+
+        &__item a{
+            color: black;
+            text-decoration: none;
+        }
+    }}

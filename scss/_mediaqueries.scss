@@ -1,0 +1,268 @@
+
+/* MEDIA QUERIE DE CELULAR */
+@media (min-width: 320px) and (max-width: 575px) {
+
+    /* index */
+    header{
+        height: auto;
+    }
+    .header__nav{
+        flex-direction: column;
+    
+    }
+    
+    .header__item{
+        padding: 5px;
+    }
+    .header__lista{
+        flex-direction: column;
+        flex-grow: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .portada__principal{
+        display: grid;
+        height: 20vh;
+        background-size: cover;
+        background-position: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .principal__tarjetas{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: auto ;
+        gap:20px;
+    }
+
+    .portada__titulo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 30px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        
+    }
+    
+    .portada__boton {
+        grid-column: 1/2;
+        grid-row: 2/2;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .portada__boton button {
+        width: 90px;
+        height: 50px;
+    }
+
+    .carrousel__altura{
+        height: 500px;
+    }
+    
+    .texto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        margin:0px;
+    }
+
+    .info__texto{
+        font-size: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        word-spacing: 0px;
+    
+    }
+
+    .texto__contenido{
+        font-size: 10px;
+    }
+
+    .texto__contenido{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        
+        
+    }
+    
+    .info__texto p{
+        color:black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0px;
+    }
+
+    .principal__tarjetas{
+        display: grid;  
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto ;
+        margin:0px;
+    }
+
+
+    .tarjeta__comida{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 10px;
+    
+    }
+    
+    .tarjeta__spa{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 10px;
+    
+    }
+    
+    
+    .tarjeta__jardin{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 10px;
+    
+    }
+    
+    .principal__tarjeta img{
+        width: 330px;
+        height: 200px;
+    }
+
+    .ws__imagen{
+        width: 40px;
+    }
+
+    .habitacion__portada{
+        display: grid;
+        height: 10vh;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+    }
+    
+    .habitacion__portada h1{
+        font-size: 30px;
+        grid-column: 1/1;
+        grid-row: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo__habitacion{
+        font-family: 'Parisienne', cursive;
+        font-size: 25px;
+        color: rgb(182, 137, 115);
+        text-decoration: underline;
+    }
+    
+    .lista__habitacion{
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: center;
+        list-style: none;
+    }
+
+    .info h3{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .servicios__img{
+        width: 20%;
+    }
+
+    .servicios__portada{
+        display: grid;
+        height: 20vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+    }
+    
+    .servicios__portada h1{
+        font-size: 25px;
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+
+
+    footer{
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+    .footer{
+    display:grid;
+    grid-template-areas: "contacto" 
+                        "enlaces"
+                        "redes"
+                        "derechos";
+    }
+    
+    .footer__titulo{
+        font-size: 12px;
+        text-align: center
+    }
+    
+    .footer__item{
+        font-size: 10px;
+        line-height: 15px;
+    
+    }
+    
+    .footer__iconos {
+        width: 30px;
+        height: 30px;
+        margin: 12px;
+    }
+
+    .footer__redes p{
+        font-size: 10px;
+    }
+
+
+    /* galeria */
+    .galeria {
+        width: 80vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "pasillo"
+                            "habitacion" 
+                            "hab-simple" 
+                            "cuartodoble"
+                            "cuadros" 
+                            "desayuno"
+                            "mesa-desayuno"
+                            "recepcion";
+        margin: 30px;
+        gap: 20px;
+    }
+
+/* MEDIA QUERIE DE DESKTOP */
+@media (min-width: 1024px) {
+
+header{
+    height: auto;
+}
+
+.header__nav{
+    flex-direction: row;
+
+}
+
+.portada__principal{
+    display: grid;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}}}

@@ -1,0 +1,17 @@
+button{
+    width: 100px;
+    height: 50px;
+    font-family: $font-principal;
+    font-size: 13px;
+    background-color:grey;
+    color: $color-principal;
+    border: solid 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+
+
+    &:hover{
+    background-color: rgb(182, 137, 115);
+
+    }}
