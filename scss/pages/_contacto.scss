@@ -1,0 +1,40 @@
+.contacto{
+    height: 50vh;
+
+    &__portada{
+        height: $tamaño-portada;
+        background-image: url("../resources/contacto.jpg");
+        background-size: cover;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr ;
+        margin-bottom: 20px;
+    }
+
+    &__portada h1{
+        font-family: $font-portadas;
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 2px 2px 2px gray;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__mapa iframe{
+        width:800px;
+        height: 500px;
+        padding: 30px;
+    }
+}
+
+
+

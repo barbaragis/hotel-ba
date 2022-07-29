@@ -1,0 +1,51 @@
+
+.principal{
+    height: 50vh;
+
+    &__tarjetas{
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+        gap:10px;
+        margin:20px;
+        justify-content: center;
+
+    }
+
+    &__card{ 
+        font-family: $font-titulos;
+        font-style: normal;
+        background-color: $color-secundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.10s;
+        margin: 20px;
+        gap: 10px;
+        &:hover{
+        transform: translate(5px);
+        box-shadow: 0 12px 16px rgb(44, 48, 66);
+    }}
+
+
+    &__titulo {
+        color:rgb(182, 137, 115);
+        text-align: center;
+        margin-bottom: 10px;
+
+        }
+
+
+    &__texto{
+        font-family: $font-principal;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color:white;
+        padding: 0 1rem;
+        font-size: 16px;
+        text-align: center;
+        line-height: 20px;
+        margin: 10px 10px 0px 0px;
+    }
+    }

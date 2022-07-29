@@ -1,0 +1,77 @@
+.galeria {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'pasillo habitacion hab-simple cuartodoble'
+                        'cuadros habitacion hab-simple desayuno'
+                        'cuadros mesa-desayuno mesa-desayuno recepcion';
+    
+
+        .pasillo {
+            grid-area: pasillo;
+        }
+
+        .cuadros {
+            grid-area: cuadros;
+        }
+
+        .habitacion {
+            grid-area: habitacion;
+        }
+
+        .hab-simple {
+            grid-area: hab-simple;
+        }
+
+        .cuartodoble {
+            grid-area: cuartodoble;
+        }
+
+        .desayuno {
+            grid-area: desayuno;
+        }
+
+        .mesa-desayuno{
+            grid-area: mesa-desayuno;
+        }
+
+        .recepcion{
+            grid-area: recepcion;
+        }
+
+        &__fotos {
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        &__fotos img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+    }
+
+        &__portada{
+            display: grid;
+            height: $tamaño-portada;
+            background-image:url("../resources/entrada.jpg");
+            background-size: cover;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr ;
+            margin-bottom: 20px;
+        }
+        
+        &__portada h1{
+            font-family: $font-portadas;
+            font-size: 60px;
+            text-align: center;
+            text-shadow: 2px 2px 2px gray;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+}
