@@ -25,27 +25,26 @@
     /* Index */
 
 
-    .portada__principal{
-        display: grid;
-        height: 20vh;
-        background-size: cover;
-        background-position: center;
-        grid-template-columns: 1fr;
-        grid-template-rows:1fr;
-    }
-
+.portada__principal{
+    display: grid;
+    height: 70vh;
+    background-image: url("../resources/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
     .portada__titulo{
-        font-family: $font-principal;
-        grid-column: 1/3;
+        grid-column: 1/1;
         grid-row: 1/2;
         color:white;
-        font-size: 20px;
+        text-shadow: 2px 1px 2px black;
+        font-size: 30px;
         display: flex;
         justify-content:center;
         align-items: center;
-    }
 
-
+}
     .portada__boton{
         grid-column: 1/2;
         grid-row: 2/2;
@@ -55,11 +54,13 @@
     }
 
     .portada__boton button{
-        width: 90px;
+        width: 80px;
         height: 40px;
     }
 
 
+    
+    
     .texto{
         display: grid;
         grid-template-columns: 1fr ;
@@ -71,6 +72,16 @@
     .ws__imagen{
         width: 60px;
     }
+
+/* Cards */
+
+.principal__tarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin:0px
+
+}
 
 
 
@@ -148,7 +159,7 @@
 
     .habitacion__lista{
         list-style: none;
-        line-height: 20px;
+        line-height: 30px;
         letter-spacing: 1px;
         margin-top: 10px;
         gap: 10px;
@@ -156,9 +167,9 @@
     }
 
     .habitacion__imagen{
-        width: 300px;
-        height: 200px;
-        margin: 10px;
+        width: 95vw;
+        height: auto;
+        padding: 0px;
     }
 
 
@@ -239,10 +250,22 @@
         display: flex;
         justify-content:center;
         align-items: center;
+    }
 
+    .servicios__img{
+    width: 100vw;
+    height: auto;
     }
 
 
+    .carousel__altura{
+    height: 200px;
+    margin-bottom: 10px;
+    }
+
+    .servicios__texto{
+    text-align: center;
+    }
     /* Contacto */
 
     .contacto__portada{
@@ -268,8 +291,17 @@
     }
 
     .contacto__mapa iframe{
-        width:400px;
-        height: 400px;
+        width: 100vw;
+        height: 100vh;
         padding: 10px;
     }
+    
+
+    .formulario__titulo{
+        font-size: 16px;
     }
+    .formulario__texto{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
