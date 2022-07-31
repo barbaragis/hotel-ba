@@ -1,5 +1,4 @@
 @import "utilities/variables";
-@import "utilities/mediaqueries";
 
 @import "layout/header";
 @import "layout/grid";
@@ -8,7 +7,6 @@
 
 @import "base/tipografia";
 @import "base/reset";
-
 @import "components/buttons";
 @import "components/carousel";
 @import "components/cards";
@@ -21,3 +19,5 @@
 @import "themes/theme";
 
 @import "vendors/bootstrap";
+
+@import "mediaqueries";
