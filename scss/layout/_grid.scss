@@ -4,46 +4,48 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: 'pasillo habitacion hab-simple cuartodoble'
-                        'cuadros habitacion hab-simple desayuno'
-                        'cuadros mesa-desayuno mesa-desayuno recepcion';
-    
+    grid-template-areas: 'entradahotel pasillo lobby portada-principal'
+                        'mesa restaurant mesa-desayuno desayuno'
+                        ' mesa restaurant mesa-desayuno desayuno';
+    gap: 20px;
 
-        .pasillo {
+        .entradahotel{
+            grid-area: entradahotel;
+        }
+
+        .pasillo{
             grid-area: pasillo;
         }
 
-        .cuadros {
-            grid-area: cuadros;
+        .lobby{
+            grid-area: lobby;
         }
 
-        .habitacion {
-            grid-area: habitacion;
+        .portada-principal{
+            grid-area: portada-principal;
         }
 
-        .hab-simple {
-            grid-area: hab-simple;
+        .mesa{
+            grid-area: mesa;
         }
 
-        .cuartodoble {
-            grid-area: cuartodoble;
-        }
-
-        .desayuno {
-            grid-area: desayuno;
+        .restaurant{
+            grid-area: restaurant;
         }
 
         .mesa-desayuno{
-            grid-area: mesa-desayuno;
+            grid-area: mesadesayuno;
+
         }
 
-        .recepcion{
-            grid-area: recepcion;
+        .desayuno2{
+            grid-area:desayuno2;
         }
 
         &__fotos {
             border-radius: 10px;
             height: 100%;
+            gap: 20px;
         }
 
         &__fotos img {

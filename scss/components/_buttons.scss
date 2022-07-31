@@ -5,7 +5,8 @@ button{
     font-size: 13px;
     background-color: $color-secundario;
     color: $color-principal;
-    border: solid 1px;
+    border: solid 1px ;
+    border-radius: 16px;
     cursor: pointer;
     text-transform: uppercase;
     transition: .3s ease all;

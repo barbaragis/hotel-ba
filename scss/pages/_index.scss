@@ -14,7 +14,7 @@
 
 
         &__titulo {
-            font-family: $font-portadas;
+            font-family: $font-principal;
             grid-column: 2/3;
             grid-row: 1/2;
             color:white;
@@ -57,13 +57,11 @@
 
         }
 
+
         &__boton button {
             width: 120px;
             height: 50px;
-            grid-column: 3/3;
-            grid-row: 3/3;
-            display: flex;
-            justify-content: center;
+
         }}
 
 .vector{

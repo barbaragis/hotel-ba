@@ -25,10 +25,10 @@
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                <img src="../resources/favicon.ico" alt="logo">
+                    <img src="../resources/favicon.ico" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="header__lista navbar-nav ">
@@ -58,7 +58,7 @@
             <h1> Habitaciones </h1>
         </section>
         <section>
-            <article class="habitacion__parrafo">
+            <article class="portada__texto habitacion__contenido">
                 <p>Las 20 habitaciones del HOTEL BA son adecuadas para familias jóvenes, estudiantes que viajan y cualquier persona que busque un alojamiento asequible en Recoleta.
                 Con cómodas camas individuales y dobles y nuevos televisores de pantalla plana con reconocidas plataformas de series y películas. </p>
                 <img class="vector" src="../resources/vector.png" alt="vector ">  
@@ -66,12 +66,12 @@
                     <li > CHECK-IN a partir de las 16 PM </li>
                     <li > CHECK-OUT hasta las 11 AM  </li>
                     <li >RECEPCIÓN de 9 AM a 10 PM </li> 
-                </ul>  
+                </ul>    
             </article>
         </section>
-        <section>
-            <article  class=" habitacion__uno animate__animated animate__fadeIn animate__delay-1s	1s">
-                <div class="informacion__texto principal__tarjetas">
+        <section class="habitaciones">
+            <article class="habitacion__uno animate__animated animate__fadeIn animate__delay-1s 1s">
+                <div class="info__texto principal__tarjetas">
                     <h2 class="habitacion__titulo"> Habitación Deluxe </h2>
                     <ul class="habitacion__lista">
                         <li > Habitación doble de 60 m² para 2 personas </li>
@@ -83,14 +83,13 @@
                         <li > Espacio de trabajo con silla </li>
                         <li > Balcón hacia la calle</li> 
                     </ul>
-                    <div class="principal__tarjetas">
-                        <a class="boton" href="../pages/galeria.html"> Ver más </a>
+                    <div>
                         <img class="habitacion__imagen" src="../resources/deluxe.jpg" alt="habitacion-suite">
                     </div>
                 </div>
-            </article>
-            <article  class="habitacion__dos animate__animated animate__fadeIn animate__delay-1s	1s">
-                <div class="informacion__texto principal__tarjetas">
+            </article> 
+            <article  class="habitacion__dos animate__animated animate__fadeIn animate__delay-1s    1s">
+                <div class="info__texto principal__tarjetas">
                     <h2 class="habitacion__titulo"> Habitación Doble Superior </h2>
                     <ul class="habitacion__lista">
                         <li > Habitación doble de 40 m² para 2 personas </li>
@@ -100,47 +99,43 @@
                         <li > Tv lcd 32" </li>
                         <li > Caja de seguridad </li>
                         <li > Espacio de trabajo con silla </li>
-                    </ul>
-                <div class="principal__tarjetas">
-                    <a class="boton" href="../pages/galeria.html"> Ver más </a>
+                </ul>
+                <div>
                     <img class="habitacion__imagen"src="../resources/doble-superior.jpg" alt="habitacion-superior">
                 </div>
             </div>
-            </article>
-            <article  class=" habitacion__tres animate__animated animate__fadeIn animate__delay-1s	1s">
-                <div class="informacion__texto principal__tarjetas">
-                    <h2 class="habitacion__titulo"> Habitación Doble Classic  </h2>
-                    <ul class="habitacion__lista">
-                        <li class="modelo__item"> Habitación doble de 40m² para 2 personas </li>
-                        <li class="modelo__item"> Cuarto de baño privado con bañera </li>
-                        <li class="modelo__item">Desayuno incluido </li>
-                        <li class="modelo__item"> Tv lcd 32" </li>
-                        <li class="modelo__item"> Caja de seguridad </li>
-                    </ul>
-                    <div class="principal__tarjetas">
-                        <a class="boton" href="../pages/galeria.html"> Ver más </a>
-                        <img class="habitacion__imagen" src="../resources/cuartodoble.jpg" alt="habitacion-doble">
-                    </div>
-            </div>
-            </article>
-            <article  class=" habitacion__cuatro animate__animated animate__fadeIn animate__delay-2s 2s">
-                <div class="informacion__texto principal__tarjetas">
-                    <h2 class="habitacion__titulo"> Habitación Doble Classic  </h2>
-                    <ul class="habitacion__lista">
-                        <li class="modelo__item"> Habitación doble de 40m² para 2 personas </li>
-                        <li class="modelo__item"> Cuarto de baño privado con bañera </li>
-                        <li class="modelo__item">Desayuno incluido </li>
-                        <li class="modelo__item"> Tv lcd 32" </li>
-                        <li class="modelo__item"> Caja de seguridad </li>
-                    </ul>
-                    <div class="principal__tarjetas">
-                        <a class="boton" href="../pages/galeria.html"> Ver más </a>
-                        <img class="habitacion__imagen" src="../resources/hab-simple.jpg" alt="habitacion-simple">
-                    </div>
+        </article>
+        <article  class=" habitacion__tres animate__animated animate__fadeIn animate__delay-1s  1s">
+            <div class="info__texto principal__tarjetas">
+                <h2 class="habitacion__titulo"> Habitación Doble Classic  </h2>
+                <ul class="habitacion__lista">
+                    <li class="modelo__item"> Habitación doble de 40m² para 2 personas </li>
+                    <li class="modelo__item"> Cuarto de baño privado con bañera </li>
+                    <li class="modelo__item">Desayuno incluido </li>
+                    <li class="modelo__item"> Tv lcd 32" </li>
+                    <li class="modelo__item"> Caja de seguridad </li>
+                </ul>
+                <div>
+                    <img class="habitacion__imagen" src="../resources/cuartodoble.jpg" alt="habitacion-doble">
                 </div>
-            </article>
+            </div>
+        </article>
+        <article  class=" habitacion__cuatro animate__animated animate__fadeIn animate__delay-2s 2s">
+            <div class="info__texto principal__tarjetas">
+                <h2 class="habitacion__titulo"> Habitación Simple Classic  </h2>
+                <ul class="habitacion__lista" >
+                    <li class="modelo__item"> Habitación simple para 1 persona </li>
+                    <li class="modelo__item">Desayuno incluido </li>
+                    <li class="modelo__item"> Tv lcd 32" </li>
+                    <li class="modelo__item"> Caja de seguridad </li>
+                </ul>
+                <div>
+                    <img class="habitacion__imagen" src="../resources/hab-simple.jpg" alt="habitacion-simple">
+                </div>
+            </div>
+        </article>
     </section>
-    <section>
+    <section class="info">
         <h3> ¿ Necesita ayuda? </h3>
         <h3>Háganos saber si podemos ayudarlo con consultas de reserva, solicitud personal o cualquier otra información.</h3>
         <div class="portada__boton">
@@ -148,6 +143,7 @@
             <button> CONTÁCTENOS </button>
             </a>
         </div>
+
     </section>
     <section class="ws">
         <a href="https://web.whatsapp.com/%F0%9F%8C%90/es" target="_blank"> <img class="ws__imagen" src="../resources/WhatsApp.svg.png" alt="whatsapp"> </a>

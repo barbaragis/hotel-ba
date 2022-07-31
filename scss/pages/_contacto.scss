@@ -1,14 +1,19 @@
 .contacto{
     height: 50vh;
 
+
     &__portada{
+        display: grid;
         height: $tamaño-portada;
-        background-image: url("../resources/contacto.jpg");
+        background-image:url("../resources/recibidor.jpg");
         background-size: cover;
+        background-position: top;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr ;
-        margin-bottom: 20px;
     }
+
+
+
 
     &__portada h1{
         font-family: $font-portadas;

@@ -2,6 +2,7 @@
     color: rgb(182, 137, 115);
 
 
+
     &__titulo{
         text-align: center;
         padding: 10px;
@@ -20,10 +21,11 @@
     &__texto{
         color:black;
         font-size: 16px;
+        font-weight: 600;
         font-family: $font-principal;
         line-height: 45px;
         text-align: center;
-        letter-spacing: 0px;
+        letter-spacing: 2px;
     }
 }
 
