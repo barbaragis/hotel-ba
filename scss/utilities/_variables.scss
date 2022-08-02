@@ -1,6 +1,7 @@
 /* Colores */
 $color-principal :white;
 $color-secundario : rgb(44, 48, 66); 
+$color-titulo : rgb(182, 137, 115);
 
 /* Letras */
 $font-principal: 'Open Sans', sans-serif;
@@ -8,4 +9,5 @@ $font-titulos: 'Playfair Display', serif;
 $font-portadas: 'Parisienne', cursive;
 
 /* Tamaños */
-$tamaño-portada: 30vh;
+$tamaño-portada: 80vh;
+$tamaño-encabezados: 30vh;

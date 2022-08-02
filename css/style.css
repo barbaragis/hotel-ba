@@ -37,7 +37,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: 'entradahotel pasillo lobby portada-principal' 'mesa restaurant mesa-desayuno desayuno' ' mesa restaurant mesa-desayuno desayuno';
-  gap: 20px; }
+  gap: 10px; }
   .galeria .entradahotel {
     grid-area: entradahotel; }
   .galeria .pasillo {
@@ -71,6 +71,7 @@ header {
     grid-template-rows: 1fr;
     margin-bottom: 20px; }
   .galeria__portada h1 {
+    color: black;
     font-family: "Parisienne", cursive;
     font-size: 60px;
     text-align: center;
@@ -85,8 +86,8 @@ header {
   color: #b68973; }
   .formulario__titulo {
     text-align: center;
-    padding: 10px;
-    color: #b68973; }
+    color: #2c3042;
+    margin-bottom: 30px; }
   .formulario__subtitulo {
     color: black;
     font-size: 20px;
@@ -101,7 +102,8 @@ header {
     font-family: "Open Sans", sans-serif;
     line-height: 45px;
     text-align: center;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin-top: 20px; }
 
 footer {
   width: 100%;
@@ -159,18 +161,21 @@ h4 {
   font-size: 16px; }
 
 h1 {
-  color: black;
+  color: #b68973;
   font-size: 35px;
   font-family: "Playfair Display", serif;
+  text-shadow: 2px 1px 2px black;
   text-align: center;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  margin-bottom: 30px; }
 
 h2 {
-  color: black;
+  color: #b68973;
   font-family: "Playfair Display", serif;
   font-size: 25px;
   text-align: center;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  margin-bottom: 20px; }
 
 h3 {
   color: #1e212d;
@@ -222,7 +227,8 @@ button {
     grid-template-rows: 1fr;
     gap: 10px;
     margin: 20px;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .principal__card {
     font-family: "Playfair Display", serif;
     font-style: normal;
@@ -300,7 +306,8 @@ button {
     height: 50px; }
 
 .vector {
-  width: 200px; }
+  width: 200px;
+  margin-top: 20px; }
 
 .texto {
   display: grid;
@@ -325,13 +332,13 @@ button {
   text-align: center; }
 
 .contacto {
-  height: 50vh; }
+  height: 80vh; }
   .contacto__portada {
     display: grid;
-    height: 30vh;
-    background-image: url("../resources/recibidor.jpg");
+    height: 80vh;
+    background-image: url("../resources/contacto.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr; }
   .contacto__portada h1 {
@@ -353,6 +360,21 @@ button {
     width: 800px;
     height: 500px;
     padding: 30px; }
+  .contacto__informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+  .contacto__informacion p {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px; }
+  .contacto__informacion h2 {
+    color: #2c3042; }
 
 .habitacion {
   height: 50vh; }
@@ -364,6 +386,7 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr; }
   .habitacion__portada h1 {
+    color: black;
     font-family: "Parisienne", cursive;
     font-size: 60px;
     text-align: center;
@@ -383,12 +406,6 @@ button {
     color: white; }
   .habitacion__cuatro {
     background-color: white; }
-  .habitacion__titulo {
-    font-family: "Parisienne", cursive;
-    font-size: 30px;
-    color: #b68973;
-    margin-top: 16px;
-    text-align: center; }
   .habitacion__lista {
     list-style: circle;
     line-height: 30px;
@@ -411,8 +428,8 @@ button {
     font-size: 16px;
     font-family: "Open Sans", sans-serif; }
   .habitacion__imagen {
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
     margin: 10px 0px 10px 10px; }
   .habitacion__contenido {
     display: grid;
@@ -431,16 +448,13 @@ button {
     align-items: center; }
   .habitacion .info__texto {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px; }
+    flex-direction: column; }
 
 .servicios {
   height: 50vh; }
   .servicios__portada {
     display: grid;
-    height: 30vh;
+    height: 80vh;
     background-image: url("../resources/servicios.jpg");
     background-size: cover;
     background-position: top;
@@ -462,10 +476,12 @@ button {
     padding: 10px; }
   .servicios__titulo {
     font-family: "Parisienne", cursive;
+    font-size: 35px;
     text-align: center; }
   .servicios__texto {
     font-size: 16px;
-    text-align: center; }
+    text-align: justify;
+    line-height: 30px; }
 
 /* MEDIA QUERIE DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -505,7 +521,7 @@ button {
     justify-content: center;
     margin-bottom: 10px; }
   .portada__boton button {
-    width: 80px;
+    width: 100px;
     height: 40px; }
   .texto {
     display: grid;

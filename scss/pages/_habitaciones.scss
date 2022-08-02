@@ -5,7 +5,7 @@
 
     &__portada{
         display: grid;
-        height: $tamaño-portada;
+        height: $tamaño-encabezados;
         background-image:url("../resources/habitacion-titulo.jpg");
         background-size: cover;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -13,6 +13,7 @@
     }
 
     &__portada h1{
+        color: black;
         font-family: $font-portadas;
         font-size: 60px;
         text-align: center;
@@ -48,14 +49,6 @@
     }
 
 
-    &__titulo{
-        font-family: $font-portadas;
-        font-size: 30px;
-        color: rgb(182, 137, 115);
-        margin-top: 16px;
-        text-align: center;
-    }
-
     &__lista{
         list-style: circle;
         line-height: 30px;
@@ -87,8 +80,8 @@
     }
 
     &__imagen{
-        width: 600px;
-        height: 500px;
+        width: 500px;
+        height: 400px;
         margin: 10px 0px 10px 10px;
     }
 
@@ -116,9 +109,7 @@
 .info__texto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+
 }
 
 }

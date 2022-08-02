@@ -1,13 +1,13 @@
 .contacto{
-    height: 50vh;
+    height: 80vh;
 
 
     &__portada{
         display: grid;
         height: $tamaño-portada;
-        background-image:url("../resources/recibidor.jpg");
+        background-image:url("../resources/contacto.jpg");
         background-size: cover;
-        background-position: top;
+        background-position: center;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr ;
     }
@@ -38,6 +38,27 @@
         width:800px;
         height: 500px;
         padding: 30px;
+    }
+
+    &__informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    &__informacion p{
+        color: black;
+        font-family: $font-principal;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    &__informacion h2{
+        color: $color-secundario;
     }
 }
 

@@ -3,7 +3,7 @@
     
         &__principal{
             display: grid;
-            height: 80vh;
+            height: $tamaño-portada;
             background-image: url("../resources/portada.jpg");
             background-size: cover;
             background-position: center;
@@ -66,6 +66,7 @@
 
 .vector{
     width: 200px;
+    margin-top: 20px;
     }
 
 .texto{
