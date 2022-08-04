@@ -17,10 +17,8 @@
         font-family: $font-titulos;
         font-style: normal;
         background-color: $color-secundario;
-        display: flex;
+        @extend .flex-centrado;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         transition: all 0.10s;
         margin: 20px;
         gap: 10px;
@@ -32,7 +30,7 @@
 
     &__titulo {
         color:rgb(182, 137, 115);
-        text-align: center;
+        @extend .text-centrado;
         margin-bottom: 10px;
 
         }
@@ -45,7 +43,7 @@
         color:white;
         padding: 0 1rem;
         font-size: 16px;
-        text-align: center;
+        @extend .text-centrado;
         line-height: 20px;
         margin: 10px 10px 0px 0px;
     }

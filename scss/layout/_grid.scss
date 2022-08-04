@@ -68,13 +68,11 @@
             color: black;
             font-family: $font-portadas;
             font-size: 60px;
-            text-align: center;
+            @extend .text-centrado;
             text-shadow: 2px 2px 2px gray;
             grid-column: 2/3;
             grid-row: 1/2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend .flex-centrado;
         }
 
 }

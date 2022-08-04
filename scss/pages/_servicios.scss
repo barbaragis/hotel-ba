@@ -5,8 +5,7 @@
         display: grid;
         height: $tamaño-portada;
         background-image:url("../resources/servicios.jpg");
-        background-size: cover;
-        background-position:top;
+        @extend .background-centrado;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr ;
     }
@@ -14,13 +13,11 @@
     &__portada h1{
         font-family: $font-portadas;
         font-size: 60px;
-        text-align: center;
+        @extend .text-centrado;
         text-shadow: 2px 2px 2px gray;
         grid-column: 2/3;
         grid-row: 1/2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend .flex-centrado;
     }
 
     &__img{
@@ -33,7 +30,7 @@
     &__titulo{
         font-family: $font-portadas;
         font-size: 35px;
-        text-align: center;
+        @extend .text-centrado;
 
     }
 

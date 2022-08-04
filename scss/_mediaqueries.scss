@@ -25,7 +25,7 @@
     /* Index */
 
 
-.portada__principal{
+    .portada__principal{
     display: grid;
     height: 70vh;
     background-image: url("../resources/portada.jpg");
@@ -75,7 +75,7 @@
 
 /* Cards */
 
-.principal__tarjetas{
+    .principal__tarjetas{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;

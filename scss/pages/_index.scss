@@ -5,8 +5,7 @@
             display: grid;
             height: $tamaño-portada;
             background-image: url("../resources/portada.jpg");
-            background-size: cover;
-            background-position: center;
+            @extend .background-centrado;
             grid-template-columns: 1fr 2fr 1fr;
             grid-template-rows: 1fr 1fr;
         }
@@ -20,17 +19,13 @@
             color:white;
             text-shadow: 2px 1px 2px black;
             font-size: 90px;
-            display: flex;
-            justify-content:center;
-            align-items: center;
+            @extend .flex-centrado;
             
         }
 
         &__texto{
-            display: flex;
+            @extend .flex-centrado;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding: 10px;
         }
 
@@ -39,7 +34,7 @@
             font-family: $font-principal;
             font-size: 16px;
             line-height: 30px;
-            text-align: center;
+            @extend .text-centrado;
             letter-spacing: 2px;
         }
 
@@ -51,8 +46,7 @@
         &__boton {
             grid-column: 2/3;
             grid-row: 2/3;
-            display: flex;
-            justify-content: center;
+            @extend .flex-centrado;
             margin-bottom: 10px;
 
         }
@@ -95,10 +89,10 @@
 
 
 .accordion-item{
-    text-align: center;
+    @extend .text-centrado;
 }
 
 .accordion-button{
-    text-align: center;
+    @extend .text-centrado;
 
 }

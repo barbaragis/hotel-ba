@@ -74,18 +74,13 @@ header {
     color: black;
     font-family: "Parisienne", cursive;
     font-size: 60px;
-    text-align: center;
     text-shadow: 2px 2px 2px gray;
     grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    grid-row: 1/2; }
 
 .formulario {
   color: #b68973; }
   .formulario__titulo {
-    text-align: center;
     color: #2c3042;
     margin-bottom: 30px; }
   .formulario__subtitulo {
@@ -93,7 +88,6 @@ header {
     font-size: 20px;
     font-family: "Playfair Display", serif;
     line-height: 25px;
-    text-align: center;
     letter-spacing: 0px;
     margin-top: 20px; }
   .formulario__texto {
@@ -101,7 +95,6 @@ header {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     line-height: 45px;
-    text-align: center;
     letter-spacing: 2px;
     margin-top: 20px; }
 
@@ -120,10 +113,7 @@ footer {
   footer .footer__enlaces {
     grid-area: enlaces; }
   footer .footer__redes {
-    grid-area: redes;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    grid-area: redes; }
   footer .footer__derechos {
     grid-area: derechos;
     color: #b4aaaa; }
@@ -233,10 +223,7 @@ button {
     font-family: "Playfair Display", serif;
     font-style: normal;
     background-color: #2c3042;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     transition: all 0.10s;
     margin: 20px;
     gap: 10px; }
@@ -245,7 +232,6 @@ button {
       box-shadow: 0 12px 16px #2c3042; }
   .principal__titulo {
     color: #b68973;
-    text-align: center;
     margin-bottom: 10px; }
   .principal__texto {
     font-family: "Open Sans", sans-serif;
@@ -254,7 +240,6 @@ button {
     color: white;
     padding: 0 1rem;
     font-size: 16px;
-    text-align: center;
     line-height: 20px;
     margin: 10px 10px 0px 0px; }
 
@@ -264,8 +249,6 @@ button {
     display: grid;
     height: 80vh;
     background-image: url("../resources/portada.jpg");
-    background-size: cover;
-    background-position: center;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr; }
   .portada__titulo {
@@ -274,22 +257,15 @@ button {
     grid-row: 1/2;
     color: white;
     text-shadow: 2px 1px 2px black;
-    font-size: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    font-size: 90px; }
   .portada__texto {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 10px; }
   .portada__texto p {
     color: black;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 30px;
-    text-align: center;
     letter-spacing: 2px; }
   .portada__contenido {
     grid-column: 2/3;
@@ -298,8 +274,6 @@ button {
   .portada__boton {
     grid-column: 2/3;
     grid-row: 2/3;
-    display: flex;
-    justify-content: center;
     margin-bottom: 10px; }
   .portada__boton button {
     width: 120px;
@@ -325,53 +299,35 @@ button {
 .ws__imagen {
   width: 60px; }
 
-.accordion-item {
-  text-align: center; }
-
-.accordion-button {
-  text-align: center; }
-
 .contacto {
   height: 80vh; }
   .contacto__portada {
     display: grid;
-    height: 80vh;
-    background-image: url("../resources/contacto.jpg");
-    background-size: cover;
-    background-position: center;
+    height: 30vh;
+    background-image: url("../resources/contacto-encabezado.jpg");
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr; }
   .contacto__portada h1 {
+    color: #2c3042;
     font-family: "Parisienne", cursive;
     font-size: 60px;
-    text-align: center;
     text-shadow: 2px 2px 2px gray;
     grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    grid-row: 1/2; }
   .contacto__mapa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
   .contacto__mapa iframe {
     width: 800px;
     height: 500px;
     padding: 30px; }
   .contacto__informacion {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 10px; }
   .contacto__informacion p {
     color: black;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 30px;
-    text-align: center;
     letter-spacing: 2px; }
   .contacto__informacion h2 {
     color: #2c3042; }
@@ -382,20 +338,15 @@ button {
     display: grid;
     height: 30vh;
     background-image: url("../resources/habitacion-titulo.jpg");
-    background-size: cover;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr; }
   .habitacion__portada h1 {
     color: black;
     font-family: "Parisienne", cursive;
     font-size: 60px;
-    text-align: center;
     text-shadow: 2px 2px 2px gray;
     grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    grid-row: 1/2; }
   .habitacion__uno {
     background-color: #2c3042;
     color: white; }
@@ -419,10 +370,7 @@ button {
     line-height: 30px;
     font-weight: bolder; }
   .habitacion__parrafo {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 16px; }
   .habitacion__parrafo p {
     font-size: 16px;
@@ -436,18 +384,12 @@ button {
     grid-column: 2/3;
     grid-row: 1/2;
     gap: 10px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    margin: 20px; }
   .habitacion__contenido p {
     font-size: 16px; }
   .habitacion .boton {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    flex-direction: column; }
   .habitacion .info__texto {
-    display: flex;
     flex-direction: column; }
 
 .servicios {
@@ -456,32 +398,38 @@ button {
     display: grid;
     height: 80vh;
     background-image: url("../resources/servicios.jpg");
-    background-size: cover;
-    background-position: top;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr; }
   .servicios__portada h1 {
     font-family: "Parisienne", cursive;
     font-size: 60px;
-    text-align: center;
     text-shadow: 2px 2px 2px gray;
     grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    grid-row: 1/2; }
   .servicios__img {
     width: 500px;
     height: 400px;
     padding: 10px; }
   .servicios__titulo {
     font-family: "Parisienne", cursive;
-    font-size: 35px;
-    text-align: center; }
+    font-size: 35px; }
   .servicios__texto {
     font-size: 16px;
     text-align: justify;
     line-height: 30px; }
+
+/* Extend */
+.background-centrado, .portada__principal, .contacto__portada, .habitacion__portada, .servicios__portada {
+  background-size: cover;
+  background-position: center; }
+
+.flex-centrado, .galeria__portada h1, footer .footer__redes, .principal__card, .portada__titulo, .portada__texto, .portada__boton, .contacto__portada h1, .contacto__mapa, .contacto__informacion, .habitacion__portada h1, .habitacion__parrafo, .habitacion__contenido, .habitacion .boton, .habitacion .info__texto, .servicios__portada h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.text-centrado, .galeria__portada h1, .formulario__titulo, .formulario__subtitulo, .formulario__texto, .principal__titulo, .principal__texto, .portada__texto p, .accordion-item, .accordion-button, .contacto__portada h1, .contacto__informacion p, .habitacion__portada h1, .servicios__portada h1, .servicios__titulo {
+  text-align: center; }
 
 /* MEDIA QUERIE DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
