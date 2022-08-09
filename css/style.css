@@ -263,23 +263,24 @@ button {
     color: black;
     font-family: 'Playfair Display', serif; }
   .portada__informacion p {
+    width: 40vw;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     letter-spacing: 0px;
     text-align: justify;
     line-height: 30px; }
   .portada__contenido {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 16px; }
   .portada__contenido img {
-    width: 600px;
+    width: 800px;
     height: 600px;
     border-radius: 16px;
-    margin: 10px 10px 0px 10px; }
+    margin-left: 16px; }
   .portada__contenido img:hover {
     filter: opacity(0.6); }
   .portada__boton {
@@ -338,7 +339,6 @@ button {
     grid-column: 2/3;
     grid-row: 1/2; }
   .habitacion__info {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -374,7 +374,7 @@ button {
   .habitacion__imagen img {
     width: 400px;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 3px;
     padding: 16px; }
 
 .servicios {
@@ -859,5 +859,5 @@ button {
     font-size: 16px;
     line-height: 20px; } }
 
-/* /* MEDIA QUERIE DE DESKTOP */
-/* @media (min-width : 992px) and (max-width: 1200px); */
+/* /*     /* MEDIA QUERIE DE DESKTOP */
+/*     @media (min-width : 992px) and (max-width: 1200px) { */

@@ -3,32 +3,32 @@
         height: 70vh;
         
         &__principal{
-                display: grid;
-                height: $tamaño-portada;
-                background-image: url("../resources/portada.jpg");
-                @extend .background-centrado;
-                grid-template-columns: 1fr 2fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                margin-bottom: 20px;
+            display: grid;
+            height: $tamaño-portada;
+            background-image: url("../resources/portada.jpg");
+            @extend .background-centrado;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-bottom: 20px;
             }
     
         &__informacion h1{
-                font-size: 60px;
-                color: black;
-                font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            color: black;
+            font-family: 'Playfair Display', serif;
+        }
 
-            }
         &__informacion p{
-                font-family: 'Roboto', sans-serif;
-                font-size: 16px;
-                letter-spacing: 0px;
-                text-align: justify;
-                line-height: 30px;
-
+            width: 40vw;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0px;
+            text-align: justify;
+            line-height: 30px;
             }
 
         &__contenido{
-            width: 100vw;
+            width: 90vw;
             display: flex;
             flex-direction:row;
             justify-content: center;
@@ -38,10 +38,10 @@
 
 
         &__contenido img{
-            width: 600px;
+            width: 800px;
             height: 600px;
             border-radius: 16px;
-            margin: 10px 10px 0px 10px;
+            margin-left: 16px;
         }
         &__contenido img:hover{
             filter: opacity(.6);
