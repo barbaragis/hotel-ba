@@ -1,15 +1,14 @@
 .habitacion{
     height: 50vh;
 
-
-
     &__portada{
         display: grid;
-        height: $tamaño-encabezados;
+        height: 90vh;
         background-image:url("../resources/habitacion-titulo.jpg");
         @extend .background-centrado;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr ;
+        margin-bottom: 30px;
     }
 
     &__portada h1{
@@ -23,86 +22,64 @@
         @extend .flex-centrado;
     }
 
-
-    &__uno{
-        background-color: $color-secundario;
-        color: white;
-
+    &__info {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
-    &__dos{
-        background-color: $color-principal;
-
+    &__info h2{
+        color: black;
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 2px 2px 2px gray;
     }
 
-    &__tres{
-        background-color: $color-secundario;
-        color: white;
-
-    }
-
-    &__cuatro{
-        background-color: $color-principal;
-
-    }
-
-
-    &__lista{
-        list-style: circle;
+    &__info p{
+        width: 50vw;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
         line-height: 30px;
-        letter-spacing: 1px;
-        margin-top: 16px;
-        gap: 20px;
-        text-align: left;
-        
+
     }
+
 
     &__horarios{
-        font-family: $font-titulos;
-        font-size: 16px;
-        line-height: 30px;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
         font-weight: bolder;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+        margin-top: 20px;
     }
 
-    &__parrafo{
-        @extend .flex-centrado;
-        flex-direction: column;
+
+    &__galeria{
+        max-width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    &__imagen img{
+        width: 400px;
+        height: 300px;
+        border-radius: 20px;
         padding: 16px;
     }
+    
 
-    &__parrafo p{
-        font-size: 16px;
-        font-family: $font-principal;
-    }
 
-    &__imagen{
-        width: 500px;
-        height: 400px;
-        margin: 10px 0px 10px 10px;
-    }
-
-    &__contenido{
-        display: grid;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        gap: 10px;
-        margin: 20px;
-        @extend .flex-centrado;
-    }
-
-    &__contenido p{
-        font-size: 16px;
-    }
-
-.boton{
-    @extend .flex-centrado;
-    flex-direction: column;
-}
-
-.info__texto{
-    @extend .flex-centrado;
-    flex-direction: column;
 
 }
 
-}
+

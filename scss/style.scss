@@ -1,4 +1,5 @@
 @import "utilities/variables";
+@import "utilities/operators";
 
 @import "layout/header";
 @import "layout/grid";
@@ -8,7 +9,6 @@
 @import "base/tipografia";
 @import "base/reset";
 @import "components/buttons";
-@import "components/carousel";
 @import "components/cards";
 
 @import "pages/index";
@@ -20,5 +20,4 @@
 
 @import "vendors/bootstrap";
 
-@import "operators";
 @import "mediaqueries";

@@ -55,58 +55,39 @@
     </header>
     <!-- cierre de fila de logo y navegacion -->
     <main>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../resources/carrousel-jardin.jpg" class="carousel__altura d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../resources/carrousel-spa.jpg" class="carousel__altura d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../resources/carrousel-pileta.jpg" class="carousel__altura d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <section class="portada__texto portada__contenido">
-            <h1>Nuestros servicios </h1> 
-            <p> Ubicado en el exclusivo Barrio de Recoleta, el cual comenzó como el lugar favorito de bohemios e intelectuales ligados al arte y la literatura. Su atractivo principal es la transformación de un barrio antiguo a un barrio innovador, el cual invita a pasear por sus espacios verdes, lagos, parques, shoppings, áreas de deporte. </p>
-            </section>
+        <section class="servicios__portada">
+            <h1> Nuestros servicios </h1>
+        </section>
         <section>
-                <article>
-                    <div class="info__texto principal__tarjetas ">
-                        <h2 class="servicios__titulo "> Boutique </h2>
-                        <p class="servicios__texto"> Hotel Boutique es un término originario de Europa, utilizado para describir pequeños hoteles con encanto y de entornos íntimos; generalmente no convencionales y emplazados en antiguas casas.</p>
-                        <img class="servicios__img" src="../resources/boutique.jpg" alt="lobby">
-                </div>
-                <div class="info__texto principal__tarjetas">
-                    
-                    <h2 class="servicios__titulo">Restaurante & Bar</h2>
-                    <p  class="servicios__texto"> HOTEL BA está relacionado con la comida local, de alta calidad, moderna y saludable. 
-                        Utilizamos ingredientes de calidad cultivados localmente para resaltar la cocina tradicional de nuestro país y crear una verdadera experiencia gastronómica</p>
-                    <img  class="servicios__img "" src="../resources/comida.jpg">
-                    </div>
-                <div class="info__texto principal__tarjetas">
-                <h2 class="servicios__titulo "> Piscina </h2>
-                <p  class="servicios__texto"> Contamos con piscina exterior realizada en acero inoxidable y climatizada con energía sustentable. Ideal para disfrutar de un merecido relax, dispone también de un hidromasaje.</p>
-                <img   class="servicios__img"  src="../resources/piscina.jpg" alt="piscina"">
-                </div>
-            <div class="info__texto principal__tarjetas">
-                
-                <h2 class="servicios__titulo ">  Spa </h2>
-                <p  class="servicios__texto"> Despierte sus sentidos y disfrute de un momento de relax en nuestro  spa. Cuenta con programas y tratamientos que  hemos diseñado para cada momento y necesidad.</p>
-                <img  class="servicios__img "" src="../resources/sauna1.jpg" alt="sauna">
+            <article class="servicios__grid animate__animated animate__fadeIn animate__delay-1s">
+                <div >
+                <h2> Boutique</h2>
+                <p> Hotel Boutique es un término originario de Europa, utilizado para describir pequeños hoteles con encanto y de entornos íntimos; generalmente no convencionales y emplazados en antiguas casas. </p>
             </div>
-        </article>
-    </section> 
+                <img  class="servicios__imagen" src="../resources/boutique.jpg" alt="hotel boutique">
+            </article>
+            <article class="servicios__grid animate__animated animate__fadeIn animate__delay-2s">
+                <img class="servicios__imagen" src="../resources/comida.jpg" alt="plato de comida">
+                <div >
+                <h2> Restaurante & Bar</h2>
+                <p> Relacionados con la comida local, moderna y saludable, utilizamos ingredientes de calidad para resaltar la cocina tradicional de nuestro país y crear una verdadera experiencia gastronómica </p>
+                </div>
+            </article>
+            <article class="servicios__grid  animate__animated animate__fadeIn animate__delay-3s">
+                <div>
+                <h2> Piscina </h2>
+                <p>Contamos con piscina exterior realizada en acero inoxidable y climatizada con energía sustentable. Ideal para disfrutar de un merecido relax </p>
+            </div>
+                <img  class="servicios__imagen" src="../resources/piscina.jpg" alt="piscina de hotel">
+            </article>
+            <article class="servicios__grid animate__animated animate__fadeIn animate__delay-4s">
+                <img  class="servicios__imagen" src="../resources/sauna1.jpg" alt="sauna" >
+                <div>
+                <h2> Spa </h2>
+                <p> Despierte sus sentidos y disfrute de un momento de relax en nuestro  spa. Cuenta con programas y tratamientos que  hemos diseñado para cada momento y necesidad. </p>
+            </div>
+            </article>
+        </section>
     </main>
     <!-- pie de pagina -->
     <footer>
