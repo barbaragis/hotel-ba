@@ -15,14 +15,13 @@
         &__informacion h1{
             font-size: 60px;
             color: black;
-            font-family: 'Playfair Display', serif;
+            font-family:$font-titulos;
         }
 
         &__informacion p{
             width: 50vw;
-            font-family: 'Roboto', sans-serif;
             font-size: 16px;
-            letter-spacing: 0px;
+            font-family: $font-parrafos;
             text-align: justify;
             line-height: 30px;
             }

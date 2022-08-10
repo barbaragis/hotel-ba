@@ -3,7 +3,7 @@
 
     &__portada{
         display: grid;
-        height: 90vh;
+        height: $tamaño-portada;
         background-image:url("../resources/habitacion-titulo.jpg");
         @extend .background-centrado;
         grid-template-columns: 1fr 1fr 1fr ;
@@ -23,24 +23,23 @@
     }
 
     &__info {
-        display: flex;
+        @extend .flex-centrado;
         flex-direction: column;
         padding: 20px;
-        justify-content: center;
-        align-items: center;
+
     }
 
     &__info h2{
         color: black;
         font-size: 40px;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-parrafos;
         text-shadow: 2px 2px 2px gray;
     }
 
     &__info p{
         width: 50vw;
         font-size: 16px;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-parrafos;
         text-align: justify;
         line-height: 30px;
 
@@ -50,7 +49,7 @@
     &__horarios{
         display: flex;
         flex-direction: row;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font-principal;
         font-size: 30px;
         font-weight: bolder;
         justify-content: center;

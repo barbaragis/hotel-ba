@@ -1,52 +1,55 @@
 
 /* Grid  */
 
-.galeria{
-    &__portada{
-        display: grid;
-        height:20vh;
-        background-image:url("../resources/entrada.jpg");
-        background-size: cover;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr ;
-        margin-bottom: 20px;
-    }
+    .galeria{
+        height: auto;
 
-    &__portada h1{
-        color: black;
-        font-family: $font-portadas;
-        font-size: 60px;
-        @extend .text-centrado;
-        text-shadow: 2px 2px 2px gray;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        @extend .flex-centrado;
-    }
-
-
-    &__contenedor{
-        max-width: 100vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    &__grid{
-        display: grid;
-        grid-template-columns: repeat(3 , 1fr);
-        grid-template-rows: auto;
-
-    }
-    &__imagen img{
-        width: 500px;
-        height: 600px;
-        padding: 10px;
-    }
-
-    &__imagen img:hover{
-        filter: opacity(.5);
+        &__portada{
+            display: grid;
+            height: $tamaño-encabezados;
+            background-image:url("../resources/entrada.jpg");
+            background-size: cover;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr ;
+            margin-bottom: 20px;
         }
-}
+
+        &__portada h1{
+            color: black;
+            font-family: $font-portadas;
+            font-size: 60px;
+            @extend .text-centrado;
+            text-shadow: 2px 2px 2px gray;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            @extend .flex-centrado;
+        }
+
+
+        &__contenedor{
+            max-width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: auto;
+            padding: 16px;
+
+        }
+        &__imagen img{
+            width: 500px;
+            height: 600px;
+            padding: 10px;
+        }
+
+        &__imagen img:hover{
+            filter: opacity(.5);
+            }
+    }
 
 
 

@@ -3,7 +3,7 @@
 
     &__portada{
         display: grid;
-        height: 80vh;
+        height: $tamaño-portada;
         background-image:url("../resources/servicios.jpg");
         @extend .background-centrado;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,7 +12,7 @@
     }
 
     &__portada h1{
-        color: black;
+        color: $color-secundario;
         font-family: $font-portadas;
         font-size: 60px;
         @extend .text-centrado;
@@ -42,14 +42,14 @@
     }
 
     &__grid h2{
-        color: black;
+        color: $color-secundario;
         font-size: 30px;
         font-family: 'Open Sans', sans-serif;
     }
 
     &__grid p{
         font-size: 16px;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-parrafos;
         text-align: justify;
         line-height: 20px;
         padding: 16px;
