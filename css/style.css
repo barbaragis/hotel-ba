@@ -865,7 +865,7 @@ button {
     line-height: 20px; } }
 
 /* MEDIA QUERIE DE DESKTOP */
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1400px) {
   .portada__principal {
     display: grid;
     height: 60vh;
@@ -930,6 +930,21 @@ button {
   .galeria__imagen img {
     width: 400px;
     height: 600px;
+    padding: 16px; }
+  .contacto__mapa {
+    width: 80vw;
+    height: 40vw;
+    padding: 16px; }
+  .contacto__datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px; }
+  .contacto__datos img {
+    width: 100vw;
+    height: auto;
+    border-radius: 20px;
     padding: 16px; }
   /* Footer */
   footer {
