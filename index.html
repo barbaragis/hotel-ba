@@ -37,13 +37,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="header__item">
-                            <a class="nav-link" href="pages/habitaciones.html" target="_blank">Habitaciones</a>
+                            <a class="nav-link" href="pages/habitaciones.html">Habitaciones</a>
                         </li>
                         <li class="header__item">
-                            <a class="nav-link" href="pages/galeria.html" target="_blank">Galería</a>
+                            <a class="nav-link" href="pages/galeria.html">Galería</a>
                         </li>
                         <li class="header__item">
-                            <a class="nav-link" href="pages/servicios.html" target="_blank">Servicios</a>
+                            <a class="nav-link" href="pages/servicios.html" >Servicios</a>
                         </li>
                         <li class="header__item">
                             <a class="nav-link" href="pages/contacto.html" target="_blank">Contacto</a>
@@ -55,113 +55,61 @@
     </header>
     <!-- cierre de fila de logo y navegacion -->
 <main>
+    <!-- Portada principal en Index -->
     <section>
-        <article class="portada__principal">
-            <div class="portada__boton">
-                <a href="pages/servicios.html">
-                <button class="boton"> CONÓCENOS </button>
-                </a>
-            </div>
+        <article class="portada__principal ">
+            <h1 > HOTEL BA </h1>
         </article>
     </section>
+    <!-- Información principal -->
     <section>
-        <article class="portada__contenido ">
-            <div class="portada__informacion">
-                <h1> HOTEL BA</h1>
-                <p>Hotel BA es un hotel de estilo urbano en el corazón de Recoleta, en la ciudad de Buenos Aires. 
+        <article class="portada animate__animated animate__bounceInRight animate__delay-1s ">
+            <div >
+                <h2 class="portada__titulo"> SOBRE NOSOTROS </h2>
+                <p class="portada__parrafo">HOTEL BA es un hotel de estilo urbano en el corazón de Recoleta, en la ciudad de Buenos Aires. 
                 Se encuentra ubicado cerca de los principales puntos de interés de la ciudad, para que todos sus huéspedes puedan disfrutar de la misma en su plenitud. 
-                Su atención personalizada y la excelente ubicación hacen de este hotel la mejor opción de alojamiento.
+                Para todos aquellos que buscan una experiencia única e inolvidable, nuestro hotel es fácilmente la mejor opción.  
                 </p> 
             </div>
+            <div class="portada__imagen rounded-start">
                 <img src="resources/BOUTIQUE-ENTRADA.jpg" alt="entrada de hotel">
-        </article>
+            </div>
+            </article>
     </section>
-    <div class="card-group">
-        <div class="principal__card card">
-            <img src="resources/comida.jpg" class="card-img-top " alt="comida">
-            <div>
-                <h3 class="principal__titulo"> Restaurante & Bar</h3>
-                <p class="principal__texto"> Desayuno buffet conformado por jugos naturales, café expreso, exquisitos tés, además de frutas, yogurt, cereales, embutidos y más.</p>
+    <!-- Sección de tarjetas -->
+    <section class="principal__servicios">
+        <h2 class="portada__titulo"> DESCÚBRANOS </h2>
+        <div class="card-group animate__animated animate__fadeInLeftBig animate__delay-2s">
+            <div class="principal__card card">
+                <img src="resources/comida.jpg" class="card-img-top rounded-4 " alt="comida">
+                <div>
+                    <h3 class="principal__titulo"> RESTAURANTE & BAR</h3>
+                    <p class="principal__texto"> Desayuno buffet conformado por jugos naturales, café expreso, exquisitos tés, además de frutas, yogurt, cereales, embutidos y más.</p>
+                </div>
+            </div>
+            <div class="principal__card card ">
+                <img src="resources/sauna1.jpg" class="card-img-top rounded-4" alt="sauna">
+                <div>
+                    <h3 class="principal__titulo"> SPA & SAUNA </h3>
+                    <p class="principal__texto">Si luego de un día de Buenos Aires y sus atractivos necesitas recargar energías, puedes nutrir tu cuerpo y espíritu en nuestro Spa...</p>
+                </div>
+            </div>
+            <div class="principal__card card">
+                <img src="resources/jardin.jpg" class="card-img-top rounded-4" alt="jardin">
+                <div>
+                    <h3 class="principal__titulo"> JARDIN & PISCINA </h3>
+                    <p class="principal__texto">Diseñado para encontrar la tranquilidad que estás buscando.
+                    Contamos con un espacio verde con deck y piscina para disfutar del aire libre</p>
+                </div>
             </div>
         </div>
-        <div class="principal__card card">
-            <img src="resources/sauna1.jpg" class="card-img-top" alt="sauna">
-            <div>
-                <h3 class="principal__titulo"> Spa & Sauna</h3>
-                <p class="principal__texto">Si luego de un día de Buenos Aires y sus atractivos necesitas recargar energías, puedes nutrir tu cuerpo y espíritu en nuestro Spa...</p>
-            </div>
-        </div>
-        <div class="principal__card card">
-            <img src="resources/jardin.jpg" class="card-img-top" alt="jardin">
-            <div>
-                <h3 class="principal__titulo">Jardín & Piscina</h3>
-                <p class="principal__texto">Diseñado para encontrar la tranquilidad que estás buscando.
-                Contamos con un espacio verde con deck y piscina para disfutar del aire libre</p>
-            </div>
-        </div>
+        <span class="portada__subtitulo"> Ofrecemos una atención singular al detalle y servicios personalizados garantizados para que se sienta como en casa  </span>
+        <div  class="portada__boton">
+            <a href="pages/servicios.html"> 
+                <button> Conocer más </button>
+            </a>
     </div>
-    <div class=" my-5 " id="accordionPanelsStayOpenExample">
-        <div class=" accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <img src="resources/wifi.png" alt="icono de internet Wifi">
-            <div>
-                <button class= "btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            Free Wi-Fi
-                </button>
-            </div>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                <div class="info__texto ">
-                    <strong>Contamos con servicio de internet wifi libre en todo el hotel</strong> 
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <img src="resources/calendario.png" alt="icono de calendario">
-            <div>
-                <button class=" btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Reserve ahora
-                </button>
-            </div>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                <div class="info__texto">
-                    <strong>Asegure la fecha de su estadía reservando ahora : +54 11 5485-7877</strong> 
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <img src="resources/ocasiones.png" alt="icono de eventos">
-            <div>
-                <button class=" btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Ocasiones especiales
-                </button>
-            </div>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                <div class="info__texto">
-                    <strong>Contáctenos por celebraciones o eventos importantes </strong> 
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                <img src="resources/television.png" alt="icono de televisor">
-            <div>
-                <button class="  btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-            Biblioteca & Videoteca
-                </button>
-            </div>
-            </h2>
-            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                <div class="info__texto">
-                    <strong>Contamos con un espacio dedicado al esparcimiento con una biblioteca y TV</strong> 
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 </main>
     <!-- pie de pagina -->
     <footer>

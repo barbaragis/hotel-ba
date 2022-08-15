@@ -24,18 +24,18 @@
 
 
     &__imagen{
-        width:900px;
-        height: 600px;
-        padding: 20px;
+        width:400px;
+        height: 400px;
+        padding: 10px;
         border-radius: 30px;
     }
 
 
     &__grid{
         display: grid;
-        grid-template-columns: 1fr 2fr ;
+        grid-template-columns: 1fr 1fr ;
         grid-template-rows: auto;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,7 +52,7 @@
         font-family: $font-parrafos;
         text-align: justify;
         line-height: 20px;
-        padding: 16px;
+        padding: 10px;
     }
 }
 

@@ -18,6 +18,7 @@
 header {
   top: 0px; }
   header .header__nav {
+    background-color: #b8ac9d;
     display: flex;
     position: static;
     flex-wrap: wrap; }
@@ -31,7 +32,7 @@ header {
     flex-grow: 1; }
   header .header__item {
     font-family: "Playfair Display", serif;
-    font-size: 20px;
+    font-size: 16px;
     display: inline;
     font-weight: bold;
     letter-spacing: 1px;
@@ -39,7 +40,7 @@ header {
     top: 0px;
     padding: 5px; }
   header .header__item a {
-    color: black;
+    color: #2c3042;
     text-decoration: none; }
   header .nav-link::before {
     content: "";
@@ -149,14 +150,9 @@ footer {
     width: 500px;
     height: 300px; }
 
-body {
-  width: 100%;
-  height: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px; }
-
 ul {
-  list-style: none; }
+  list-style: none;
+  color: white; }
 
 a {
   text-decoration: none;
@@ -187,6 +183,9 @@ h3 {
   word-spacing: 3px;
   padding: 16px; }
 
+span {
+  text-align: center; }
+
 * {
   margin: 0px;
   /* margen externo */
@@ -209,7 +208,7 @@ button {
     background-color: #b68973; }
 
 .principal {
-  height: 50vh; }
+  height: 70vh; }
   .principal__tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -218,78 +217,86 @@ button {
     margin: 20px;
     justify-content: center;
     align-items: center; }
+  .principal__servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .principal__card {
+    background-color: #b8ac9d;
+    height: 500px;
     font-family: "Playfair Display", serif;
     font-style: normal;
-    background-color: #2c3042;
     flex-direction: column;
     transition: all 0.10s;
-    margin: 20px;
-    gap: 10px; }
-    .principal__card:hover {
-      transform: translate(5px);
-      box-shadow: 0 12px 16px #2c3042; }
+    gap: 30px;
+    border-style: none;
+    padding: 20px; }
   .principal__titulo {
-    color: white;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    color: black;
     margin-bottom: 10px; }
   .principal__texto {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    letter-spacing: 0px;
-    color: white;
+    letter-spacing: 1px;
+    text-align: left;
+    color: black;
     padding: 0 1rem;
-    font-size: 16px;
     line-height: 20px;
     margin: 10px 10px 10px 0px; }
 
-.card-title {
-  font-size: 20px;
-  color: black; }
-
-.card-text {
-  font-size: 16px;
-  text-align: left;
-  line-height: 25px; }
-
 .portada {
-  height: 70vh; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px; }
   .portada__principal {
     display: grid;
     height: 90vh;
     background-image: url("../resources/portada.jpg");
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 20px; }
-  .portada__informacion h1 {
-    font-size: 60px;
-    color: black;
-    font-family: "Playfair Display", serif; }
-  .portada__informacion p {
-    width: 50vw;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    text-align: justify;
-    line-height: 30px; }
-  .portada__contenido {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px; }
-  .portada__contenido img {
-    width: 800px;
-    height: 600px;
-    border-radius: 16px;
-    margin-left: 16px; }
-  .portada__contenido img:hover {
-    filter: opacity(0.6); }
-  .portada__boton {
+  .portada__principal h1 {
+    color: white;
+    font-size: 70px;
+    text-shadow: 3px 2px 2px gray;
     grid-column: 2/3;
-    grid-row: 2/3;
-    margin-bottom: 10px; }
+    grid-row: 2/2; }
+  .portada__titulo {
+    color: #2c3042;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px black; }
+  .portada__parrafo {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    padding: 30px; }
+  .portada__imagen img {
+    width: 450px;
+    height: 400px;
+    margin: 20px 0px 20px 0px; }
+  .portada img:hover {
+    transform: translate(5px);
+    box-shadow: 0 12px 16px #2c3042; }
+  .portada__boton {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    margin-bottom: 30px; }
   .portada__boton button {
-    width: 120px;
-    height: 50px; }
+    width: 110px;
+    height: 40px; }
+  .portada__subtitulo {
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 20px 0px 5px 0px; }
 
 .contacto {
   height: 80vh; }
@@ -347,7 +354,7 @@ button {
     font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px 2px gray; }
   .habitacion__info p {
-    width: 50vw;
+    width: 10vw;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     text-align: justify;
@@ -370,7 +377,7 @@ button {
     align-items: center; }
   .habitacion__imagen img {
     width: 400px;
-    height: 500px;
+    height: 400px;
     border-radius: 3px;
     padding: 16px; }
 
@@ -391,15 +398,15 @@ button {
     grid-column: 1/2;
     grid-row: 1/1; }
   .servicios__imagen {
-    width: 900px;
-    height: 600px;
-    padding: 20px;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
     border-radius: 30px; }
   .servicios__grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -412,7 +419,7 @@ button {
     font-family: "Roboto", sans-serif;
     text-align: justify;
     line-height: 20px;
-    padding: 16px; }
+    padding: 10px; }
 
 /* MEDIA QUERIE DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -866,34 +873,6 @@ button {
 
 /* MEDIA QUERIE DE DESKTOP */
 @media (min-width: 993px) and (max-width: 1400px) {
-  .portada__principal {
-    display: grid;
-    height: 60vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-bottom: 20px; }
-  .portada__contenido {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 16px; }
-  .portada__informacion p {
-    width: 100vw;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    text-align: justify;
-    line-height: 30px;
-    padding: 20px; }
-  .portada__contenido img {
-    width: 900px;
-    height: 600px;
-    padding: 16px; }
-  .portada__boton {
-    grid-column: 1/3;
-    grid-row: 1/3;
-    margin-bottom: 10px; }
   /* Habitaciones */
   .habitacion__info {
     width: 100vw;
@@ -930,26 +909,4 @@ button {
   .galeria__imagen img {
     width: 400px;
     height: 600px;
-    padding: 16px; }
-  .contacto__mapa {
-    width: 80vw;
-    height: 40vw;
-    padding: 16px; }
-  .contacto__datos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    padding: 16px; }
-  .contacto__datos img {
-    width: 100vw;
-    height: auto;
-    border-radius: 20px;
-    padding: 16px; }
-  /* Footer */
-  footer {
-    width: 100vw;
-    background-color: #2c3042;
-    display: grid;
-    grid-template-areas: "contacto enlaces redes" "contacto enlaces derechos";
-    padding: 24px; } }
+    padding: 16px; } }
