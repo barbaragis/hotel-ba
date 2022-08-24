@@ -1,6 +1,6 @@
 
 .principal{
-    height: 70vh;
+    height: 80vh;
 
     &__tarjetas{
         display: grid;  
@@ -8,8 +8,6 @@
         grid-template-rows: 1fr  ;
         gap:10px;
         margin:20px;
-        justify-content: center;
-        align-items: center;
     }
 
     &__servicios{
@@ -20,41 +18,36 @@
     }
 
     &__card{ 
-        background-color: rgb(184, 172, 157 ) ;
-        height: 500px;
+        height: 600px;
         font-family: $font-titulos;
-        font-style: normal;
         @extend .flex-centrado;
         flex-direction: column;
-        transition: all 0.10s;
         gap: 30px;
         border-style: none;
-        padding: 20px;
+        padding: 10px;
 
     }
 
 
     &__titulo {
+        color: black;
         font-size: 20px;
         font-family: $font-titulos;
-        color: black;
         @extend .text-centrado;
         margin-bottom: 10px;
         }
 
 
     &__texto{
-        font-family: $font-principal;
+        font-family: $font-parrafos;
         font-size: 16px;
         letter-spacing: 1px;
+        word-spacing: 2px;
         text-align: left;
-        color:black;
         padding: 0 1rem;
         @extend .text-centrado;
         line-height: 20px;
         margin: 10px 10px 10px 0px;
     }
-
     }
-
 

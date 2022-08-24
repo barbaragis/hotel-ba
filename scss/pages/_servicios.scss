@@ -1,33 +1,54 @@
 .servicios{
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__portada{
         display: grid;
-        height: $tamaño-portada;
-        background-image:url("../resources/servicios.jpg");
+        height: $tamaño-encabezados;
+        background-image:url("../resources/contacto.jpg");
         @extend .background-centrado;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr 1fr   ;
+        grid-template-rows: auto  ;
         margin-bottom: 20px;
     }
 
     &__portada h1{
-        color: $color-secundario;
-        font-family: $font-portadas;
+        color: $color-principal;
+        font-family:  'Playfair Display', serif;
         font-size: 60px;
         @extend .text-centrado;
-        text-shadow: 2px 2px 2px gray;
-        grid-column: 1/2;
-        grid-row: 1/1;
+        text-shadow: 2px 2px 2px black;
+        grid-column: 2/3;
+        grid-row: 1/2;
         @extend .flex-centrado;
     }
 
+    
+    &__titulo{
+        color:black;
+        font-size: 30px;
+        font-family: $font-titulos;
+        text-align:center;
+        text-shadow: 1px 1px 2px black;
+        margin-top: 20px;
+
+    }
+
+    &__texto{
+        color: gray;
+        font-family: $font-parrafos;
+        padding: 16px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        text-align: justify;
+    }
 
     &__imagen{
-        width:400px;
-        height: 400px;
+        width : 680px;
+        height: 550px;
         padding: 10px;
-        border-radius: 30px;
+        border-radius: 20px;
     }
 
 
@@ -35,7 +56,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: auto;
-        margin-bottom: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -44,7 +64,7 @@
     &__grid h2{
         color: $color-secundario;
         font-size: 30px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font-titulos;
     }
 
     &__grid p{
@@ -54,5 +74,6 @@
         line-height: 20px;
         padding: 10px;
     }
+
 }
 

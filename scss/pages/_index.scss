@@ -1,5 +1,5 @@
 
-    .portada{
+.portada{
         display: flex;
         flex-direction:row;
         justify-content: center;
@@ -12,20 +12,13 @@
             background-image: url("../resources/portada.jpg");
             @extend .background-centrado;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: auto;
             margin-bottom: 20px;
             }
 
-        &__principal h1{
-            color: white;
-            font-size: 70px;
-            text-shadow: 3px 2px 2px gray;
-            grid-column: 2/3 ;
-            grid-row: 2/2 ;
-        }
 
         &__titulo{
-            color: $color-secundario;
+            color:black;
             font-size: 30px;
             font-family: $font-titulos;
             text-align:center;
@@ -33,10 +26,12 @@
         }
 
         &__parrafo{
+            width: 50vw;
             font-size: 16px;
             font-family: $font-principal;
             text-align: justify;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
             line-height: 25px;
             padding: 30px;
         }
@@ -47,26 +42,22 @@
             margin: 20px 0px 20px 0px;
         }
 
-        & img:hover{
-            transform: translate(5px);
-            box-shadow: 0 12px 16px $color-secundario;
-        }
 
 
         &__boton {
-            grid-column: 2/2;
-            grid-row: 2/2;
+            grid-column: 2/3;
+            grid-row: auto;
             @extend .flex-centrado;
             margin-bottom: 30px;
         }
 
         &__boton button {
-            width: 110px;
+            width: 120px;
             height: 40px;
         }
 
         &__subtitulo{
-            font-size: 16px;
+            font-size: 18px;
             font-family: 'Playfair Display', serif;
             text-align: center;
             margin: 20px 0px 5px 0px;

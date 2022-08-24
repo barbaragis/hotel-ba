@@ -25,6 +25,7 @@
     <header>
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container-fluid">
+                <h3> HOTEL BA</h3>
                 <a class="navbar-brand" href="../index.html">
                     <img src="../resources/favicon.ico" alt="logo">
                 </a>
@@ -54,52 +55,53 @@
         </nav> 
     </header>
     <!-- cierre de fila de logo y navegacion -->
-    <main> 
+    <main>
+        <!-- Seccion de portada -->
         <section class=" contacto__portada" >
-            <h1> Dónde encontrarnos </h1>
+            <h1 class="animate__animated animate__backInDown"> Contacto </h1>
         </section>
         <section>
-            <div class="contacto__datos d-flex align-items-center">
+            <article>
+                <h2 class="contacto__titulo"> ¡Estamos ubicados en Recoleta! </h2>
+                <p class="contacto__subtitulo">Los lugares de negocios, los centros comerciales y plazas están a 10 minutos en auto. 
+                    Se puede llegar fácilmente a nuestro hotel en auto, taxi o transporte público.</p>
+                <div class="contacto__datos">
+                        <h2  class="contacto__titulo"> TELÉFONO</h2>
+                        <p class="contacto__subtitulo"> +54 11 5485-7877</p>
+                        <h2 class="contacto__titulo" > RESERVAS </h2>
+                        <p class="contacto__subtitulo"> info@hotelbuenosaires.com </p>
+                    </div>
+            </article>
+        <div class="contacto__datos d-flex align-items-center">
                 <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.2875732871412!2d-58.39624838698653!3d-34.589615180375084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9878ae211d%3A0x953308eeda44efab!2sPres.%20Jos%C3%A9%20Evaristo%20Uriburu%201735%2C%20C1114AAS%20CABA!5e0!3m2!1sen!2sar!4v1655665797180!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div>
-                    <h2 > Hotel BA </h2>
-                    <p class="contacto__subtitulo"> Pres. José Evaristo Uriburu 1735 , Recoleta </p>
-                    </div>
-                    <div>
-                    <h2 > Teléfono </h2>
-                    <p class="contacto__subtitulo"> +54 11 5485-7877</p>
-                    </div>
-                    <div>
-                    <h2 > Reservas </h2>
-                    <p class="contacto__subtitulo">info@hotelbuenosaires.com </p>
-                    </div>
-                </div>
-        </section>
-        <section class="formulario mx-5 my-5">
-            <article >
+        <section class="formulario mx-5 my-5 contacto__datos">
+            <article>
                 <form method="post">
                     <h2 class="formulario__titulo"> Déjanos tu mensaje </h2>
                     <p class="formulario__subtitulo"> Te responderemos a la brevedad</p>
-                <div class=" mx-auto col-md-6 mb-3">
+                <div class=" mx-auto mb-3 ">
                     <label> Nombre </label>
                     <input type="name" class=form-control aria-describedby="nombre">
                 </div>
-                <div class="mx-auto col-md-6 mb-3">
+                <div class="mx-auto" >
                     <label for="exampleInputEmail1" class="form-label"> Dirección de correo electrónico </label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-                <div class="mx-auto col-md-6  mb-3">
+                <div class="mx-auto">
                     <label> Número de teléfono </label>
                     <input type="name" class=form-control aria-describedby="numero">
                 </div>
-                <div class="mx-auto col-md-6  mb-3">
+                <div class="mx-auto">
                     <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div class="portada__boton">
-                    <button  type="submit" class="mx-auto btn-primary">Enviar</button>
+                    <button  type="submit" class="mx-auto m-3 btn-primary">Enviar</button>
                 <div>
                 </form>
+            </article>
+        </section>
+
     </main>
     <!-- pie de pagina -->
     <footer>
@@ -126,7 +128,6 @@
         <section class="footer__redes">
             <a href="https://facebook.com" target="_blank"> <img class ="footer__iconos"src="../resources/facebook-square-brands.svg" alt="facebook"> </a>
             <a href="https://instagram.com" target="_blank"> <img class="footer__iconos" src="../resources/instagram-brands.svg" alt="instagram"> </a> 
-            <a href="https://youtube.com" target="_blank"> <img class="footer__iconos" src="../resources/youtube-square-brands.svg" alt="youtube"> </a>
             <p class="footer__derechos"> 2022 Todos los derechos reservados </p>
         </section>
     </footer>  

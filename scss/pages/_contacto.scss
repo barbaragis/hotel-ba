@@ -4,24 +4,26 @@
 
     &__portada{
         display: grid;
-        height: $tamaño-encabezados;
-        background-image:url("../resources/contacto-encabezado.jpg");
+        height: $tamaño-portada;
+        background-image:url("../resources/escritorio-recepcion.jpg");
         @extend .background-centrado;
         grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr ;
+        grid-template-rows: auto  ;
         margin-bottom: 20px;
     }
 
     &__portada h1{
-        color: $color-secundario;
-        font-family: $font-portadas;
+        color: $color-principal;
+        font-family:  'Playfair Display', serif;;
         font-size: 60px;
         @extend .text-centrado;
-        text-shadow: 2px 2px 2px gray;
+        text-shadow: 2px 2px 2px black;
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 1/2;
         @extend .flex-centrado;
     }
+
+
     &__datos{
         display: flex;
         flex-direction: row;
@@ -29,20 +31,32 @@
         gap:30px;
     }
 
+    &__titulo{
+        color: $color-secundario;
+        font-size: 20px;
+        font-family: $font-titulos;
+        text-align: center;
+
+    }
+
     &__subtitulo{
         color: $color-secundario;
         font-size: 16px;
+        font-family: $font-parrafos;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: center
     }
     &__mapa{
         @extend .flex-centrado;
-        flex-direction: column;
-        margin-top: 30px;
+        flex-direction: row;
+        margin-bottom: 30px;
 
     }
     
     &__mapa {
-        width:900px;
-        height: 500px;
+        width:600px;
+        height: 400px;
 
     }
 

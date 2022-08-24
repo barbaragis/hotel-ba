@@ -27,6 +27,7 @@
     <header>
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container-fluid">
+                <h3> HOTEL BA</h3>
                 <a class="navbar-brand" href="../index.html">
                     <img src="../resources/favicon.ico" alt="logo">
                 </a>
@@ -58,15 +59,14 @@
     <!-- cierre de fila de logo y navegacion -->
     <main>
         <section class="galeria__portada">
-            <h1> Galería </h1>
+            <h1 class="portada__titulo"> Galería</h1>
         </section>
-        <section>
-            <h2> Conocé todo lo que te espera en nuestro hotel </h2>
-        </section>
-        <section class="galeria__contenedor">
-            <div class="galeria__grid">
-                <div class="galeria__imagen">
-                    <img src="../resources/pasillo.jpg" alt="living">
+        <section class="galeria__contenedor animate__animated animate__fadeIn  animate__delay-1s">
+            <article class="portada__subtitulo">
+                <span class="galeria__subtitulo">  Conocé todo lo que te espera en nuestro hotel  </span>
+                <div class="galeria__grid ">
+                <div class="galeria__imagen rounded rounded-4">
+                    <img  src="../resources/pasillo.jpg" alt="living">
                 </div>
                 <div class="galeria__imagen">
                     <img src="../resources/galeria-pasillo.jpg" alt="pasillo de hotel">
@@ -102,7 +102,22 @@
                     <img src="../resources/mesa.jpg" alt="mesa de restaurante">
                 </div>
             </div>
+        </article>
         </section>
+        <section class="galeria__redes">
+            <div class="card text-bg-dark mb-3"  style="width: 60rem;">
+                <div class="card-body p-3 mx-auto">
+                    <a href="https://instagram.com" target="_blank"> ¡ Síguenos en Instagram! </a>
+                </div>
+            <div class="galeria__redes">
+                <img class="galeria__iconos" src="../resources/recibidor.jpg">
+                <img class="galeria__iconos" src="../resources/spa.jpg">
+                <img class="galeria__iconos" src="../resources/desayuno.jpg">
+                <img class="galeria__iconos" src="../resources/escalera.jpg">
+            </div>
+            </div>
+        </section>
+
     </main>
     <!-- pie de pagina -->
     <footer>
@@ -129,7 +144,6 @@
         <section class="footer__redes">
             <a href="https://facebook.com" target="_blank"> <img class ="footer__iconos"src="../resources/facebook-square-brands.svg" alt="facebook"> </a>
             <a href="https://instagram.com" target="_blank"> <img class="footer__iconos" src="../resources/instagram-brands.svg" alt="instagram"> </a> 
-            <a href="https://youtube.com" target="_blank"> <img class="footer__iconos" src="../resources/youtube-square-brands.svg" alt="youtube"> </a>
             <p class="footer__derechos"> 2022 Todos los derechos reservados </p>
         </section>
     </footer>

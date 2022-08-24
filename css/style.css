@@ -7,18 +7,18 @@
   background-size: cover;
   background-position: center; }
 
-.flex-centrado, .galeria__portada h1, footer .footer__redes, .principal__card, .portada__boton, .contacto__portada h1, .contacto__mapa, .habitacion__portada h1, .habitacion__info, .servicios__portada h1 {
+.flex-centrado, footer .footer__redes, .principal__card, .portada__boton, .contacto__portada h1, .contacto__mapa, .habitacion__portada h1, .habitacion__info, .servicios__portada h1 {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.text-centrado, .galeria__portada h1, .formulario__titulo, .formulario__subtitulo, .formulario__texto, .principal__titulo, .principal__texto, .accordion-item, .accordion-button, .contacto__portada h1, .habitacion__portada h1, .servicios__portada h1 {
+.text-centrado, .galeria__portada h1, .formulario__titulo, .formulario__subtitulo, .formulario__texto, .principal__titulo, .principal__texto, .accordion-item, .accordion-button, .contacto__portada h1, .servicios__portada h1 {
   text-align: center; }
 
 header {
   top: 0px; }
   header .header__nav {
-    background-color: #b8ac9d;
+    background-color: #a8b4bd;
     display: flex;
     position: static;
     flex-wrap: wrap; }
@@ -64,21 +64,21 @@ header {
   height: auto; }
   .galeria__portada {
     display: grid;
-    height: 30vh;
-    background-image: url("../resources/entrada.jpg");
-    background-size: cover;
+    height: 20vh;
+    background-image: url("../resources/galeria-encabezado.jpg");
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-bottom: 20px; }
+    grid-template-rows: auto; }
   .galeria__portada h1 {
-    color: black;
-    font-family: "Parisienne", cursive;
+    color: white;
+    font-family: "Playfair Display", serif;
     font-size: 60px;
-    text-shadow: 2px 2px 2px gray;
     grid-column: 2/3;
-    grid-row: 1/2; }
+    grid-row: 2/2; }
+  .galeria__subtitulo {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px; }
   .galeria__contenedor {
-    max-width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,13 +87,25 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    padding: 16px; }
+    gap: 10px;
+    margin-bottom: 16px; }
   .galeria__imagen img {
     width: 400px;
     height: 600px;
-    padding: 16px; }
+    border-radius: 5px; }
   .galeria__imagen img:hover {
-    filter: opacity(0.5); }
+    transform: scale(1.1, 1.1);
+    transition: all 0.9s; }
+  .galeria__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+  .galeria__iconos {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 16px; }
 
 .formulario {
   color: #b68973; }
@@ -116,7 +128,6 @@ header {
     margin-top: 20px; }
 
 footer {
-  width: 100%;
   background-color: #2c3042;
   display: grid;
   grid-template-areas: "contacto enlaces redes" "contacto enlaces derechos";
@@ -126,7 +137,7 @@ footer {
     text-shadow: 3px 2px 3px black;
     font-size: 16px;
     text-align: center;
-    padding-bottom: 10px; }
+    padding-bottom: 16px; }
   footer .footer__enlaces {
     grid-area: enlaces; }
   footer .footer__redes {
@@ -135,20 +146,17 @@ footer {
     grid-area: derechos;
     color: #b4aaaa; }
   footer .footer__redes p {
-    font-size: 12px; }
+    font-size: 16px; }
   footer .footer__iconos {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin: 12px; }
   footer .footer__item {
     color: #b4aaaa;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 30px;
-    text-align: left; }
-  footer .footer__imagen {
-    width: 500px;
-    height: 300px; }
+    text-align: justify; }
 
 ul {
   list-style: none;
@@ -156,7 +164,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: lightgray; }
+  color: white; }
 
 h1 {
   color: #b68973;
@@ -184,7 +192,10 @@ h3 {
   padding: 16px; }
 
 span {
-  text-align: center; }
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 1px; }
 
 * {
   margin: 0px;
@@ -205,43 +216,39 @@ button {
   text-transform: uppercase;
   transition: .3s ease all; }
   button:hover {
-    background-color: #b68973; }
+    background-color: #b68973;
+    transform: scale(1.15, 1.15); }
 
 .principal {
-  height: 70vh; }
+  height: 80vh; }
   .principal__tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
-    margin: 20px;
-    justify-content: center;
-    align-items: center; }
+    margin: 20px; }
   .principal__servicios {
     display: flex;
     flex-direction: column;
     justify-content: center; }
   .principal__card {
-    background-color: #b8ac9d;
-    height: 500px;
+    height: 600px;
     font-family: "Playfair Display", serif;
-    font-style: normal;
     flex-direction: column;
-    transition: all 0.10s;
     gap: 30px;
     border-style: none;
-    padding: 20px; }
+    padding: 10px; }
   .principal__titulo {
+    color: black;
     font-size: 20px;
     font-family: "Playfair Display", serif;
-    color: black;
     margin-bottom: 10px; }
   .principal__texto {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
+    word-spacing: 2px;
     text-align: left;
-    color: black;
     padding: 0 1rem;
     line-height: 20px;
     margin: 10px 10px 10px 0px; }
@@ -257,43 +264,36 @@ button {
     height: 90vh;
     background-image: url("../resources/portada.jpg");
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
     margin-bottom: 20px; }
-  .portada__principal h1 {
-    color: white;
-    font-size: 70px;
-    text-shadow: 3px 2px 2px gray;
-    grid-column: 2/3;
-    grid-row: 2/2; }
   .portada__titulo {
-    color: #2c3042;
+    color: black;
     font-size: 30px;
     font-family: "Playfair Display", serif;
     text-align: center;
     text-shadow: 1px 1px 2px black; }
   .portada__parrafo {
+    width: 50vw;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     text-align: justify;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
     line-height: 25px;
     padding: 30px; }
   .portada__imagen img {
     width: 450px;
     height: 400px;
     margin: 20px 0px 20px 0px; }
-  .portada img:hover {
-    transform: translate(5px);
-    box-shadow: 0 12px 16px #2c3042; }
   .portada__boton {
-    grid-column: 2/2;
-    grid-row: 2/2;
+    grid-column: 2/3;
+    grid-row: auto;
     margin-bottom: 30px; }
   .portada__boton button {
-    width: 110px;
+    width: 120px;
     height: 40px; }
   .portada__subtitulo {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Playfair Display', serif;
     text-align: center;
     margin: 20px 0px 5px 0px; }
@@ -302,32 +302,41 @@ button {
   height: 80vh; }
   .contacto__portada {
     display: grid;
-    height: 30vh;
-    background-image: url("../resources/contacto-encabezado.jpg");
+    height: 90vh;
+    background-image: url("../resources/escritorio-recepcion.jpg");
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     margin-bottom: 20px; }
   .contacto__portada h1 {
-    color: #2c3042;
-    font-family: "Parisienne", cursive;
+    color: white;
+    font-family: 'Playfair Display', serif;
     font-size: 60px;
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px black;
     grid-column: 2/3;
-    grid-row: 2/3; }
+    grid-row: 1/2; }
   .contacto__datos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px; }
+  .contacto__titulo {
+    color: #2c3042;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    text-align: center; }
   .contacto__subtitulo {
     color: #2c3042;
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center; }
   .contacto__mapa {
-    flex-direction: column;
-    margin-top: 30px; }
+    flex-direction: row;
+    margin-bottom: 30px; }
   .contacto__mapa {
-    width: 900px;
-    height: 500px; }
+    width: 600px;
+    height: 400px; }
 
 .habitacion {
   height: 50vh; }
@@ -336,84 +345,99 @@ button {
     height: 90vh;
     background-image: url("../resources/habitacion-titulo.jpg");
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
+    border-color: black;
     margin-bottom: 30px; }
   .habitacion__portada h1 {
-    color: black;
-    font-family: "Parisienne", cursive;
+    color: white;
+    font-family: "Playfair Display", serif;
     font-size: 60px;
+    text-align: center;
     text-shadow: 2px 2px 2px gray;
     grid-column: 2/3;
     grid-row: 1/2; }
   .habitacion__info {
     flex-direction: column;
     padding: 20px; }
-  .habitacion__info h2 {
+  .habitacion__info h1 {
     color: black;
     font-size: 40px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Playfair Display", serif;
     text-shadow: 2px 2px 2px gray; }
   .habitacion__info p {
-    width: 10vw;
+    width: 70vw;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     text-align: justify;
-    line-height: 30px; }
+    line-height: 30px;
+    letter-spacing: 1px; }
   .habitacion__horarios {
+    color: black;
     display: flex;
     flex-direction: row;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
     font-weight: bolder;
+    letter-spacing: 2px;
     justify-content: center;
     align-items: center;
     gap: 40px;
     margin-top: 20px; }
-  .habitacion__galeria {
-    max-width: 100vw;
+  .habitacion__card {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; }
-  .habitacion__imagen img {
-    width: 400px;
-    height: 400px;
-    border-radius: 3px;
+    align-items: center;
     padding: 16px; }
 
 .servicios {
-  height: 50vh; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .servicios__portada {
     display: grid;
-    height: 90vh;
-    background-image: url("../resources/servicios.jpg");
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    height: 20vh;
+    background-image: url("../resources/contacto.jpg");
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     margin-bottom: 20px; }
   .servicios__portada h1 {
-    color: #2c3042;
-    font-family: "Parisienne", cursive;
+    color: white;
+    font-family: 'Playfair Display', serif;
     font-size: 60px;
-    text-shadow: 2px 2px 2px gray;
-    grid-column: 1/2;
-    grid-row: 1/1; }
+    text-shadow: 2px 2px 2px black;
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .servicios__titulo {
+    color: black;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 20px; }
+  .servicios__texto {
+    color: gray;
+    font-family: "Roboto", sans-serif;
+    padding: 16px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: justify; }
   .servicios__imagen {
-    width: 400px;
-    height: 400px;
+    width: 680px;
+    height: 550px;
     padding: 10px;
-    border-radius: 30px; }
+    border-radius: 20px; }
   .servicios__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center; }
   .servicios__grid h2 {
     color: #2c3042;
     font-size: 30px;
-    font-family: 'Open Sans', sans-serif; }
+    font-family: "Playfair Display", serif; }
   .servicios__grid p {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
@@ -767,6 +791,9 @@ button {
     width: 100vw;
     height: auto;
     padding: 16px; }
+  .habitacion__card {
+    display: flex;
+    flex-direction: column; }
   /* Galeria */
   .galeria__portada {
     display: grid;
@@ -872,41 +899,3 @@ button {
     line-height: 20px; } }
 
 /* MEDIA QUERIE DE DESKTOP */
-@media (min-width: 993px) and (max-width: 1400px) {
-  /* Habitaciones */
-  .habitacion__info {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center; }
-  .habitacion__info p {
-    width: 100vw;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    line-height: 30px;
-    padding: 16px; }
-  .habitacion__horarios {
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
-    padding: 20px; }
-  /* Galeria */
-  .galeria__contenedor {
-    max-width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px; }
-  .galeria__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    padding: 16px; }
-  .galeria__imagen img {
-    width: 400px;
-    height: 600px;
-    padding: 16px; } }
