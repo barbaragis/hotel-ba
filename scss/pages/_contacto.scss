@@ -1,5 +1,5 @@
 .contacto{
-    height: 80vh;
+    color: $color-titulo;
 
 
     &__portada{
@@ -15,27 +15,26 @@
     &__portada h1{
         color: $color-principal;
         font-family:  'Playfair Display', serif;;
-        font-size: 60px;
-        @extend .text-centrado;
+        font-size: $portada;
+        text-align: center;
         text-shadow: 2px 2px 2px black;
         grid-column: 2/3;
         grid-row: 1/2;
-        @extend .flex-centrado;
+        @extend .flex-columnas;
     }
 
 
     &__datos{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap:30px;
+        @extend .flex-filas;
+        gap:15px;
     }
 
     &__titulo{
         color: $color-secundario;
-        font-size: 20px;
+        font-size: $subtitulo;
         font-family: $font-titulos;
         text-align: center;
+        padding: 16px;
 
     }
 
@@ -47,20 +46,16 @@
         word-spacing: 2px;
         text-align: center
     }
+
     &__mapa{
-        @extend .flex-centrado;
-        flex-direction: row;
+        @extend .flex-filas;
         margin-bottom: 30px;
 
     }
     
-    &__mapa {
-        width:600px;
-        height: 400px;
-
     }
 
-}
+
 
 
 

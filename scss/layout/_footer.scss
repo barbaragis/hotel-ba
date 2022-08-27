@@ -7,11 +7,10 @@ footer{
 
     .footer {
         &__titulo {
-            color: white;
+            color: $color-principal;
             text-shadow: 3px 2px 3px black;
-            font-size: 16px;
+            font-size: $contenido;
             text-align: center;
-            padding-bottom: 16px;
             }
 
         &__enlaces {
@@ -20,12 +19,13 @@ footer{
 
         &__redes {
             grid-area: redes;
-            @extend .flex-centrado;
+            @extend .flex-filas;
             }
 
         &__derechos {
             grid-area: derechos;
             color: rgb(180, 170, 170);
+            @extend .flex-columnas;
             }   
 
         &__redes p{
@@ -33,14 +33,14 @@ footer{
             }
 
         &__iconos {
-            width: 45px;
-            height: 45px;
+            width: 65px;
+            height: 65px;
             margin: 12px;
             }
 
         &__item {
             color:rgb(180, 170, 170);
-            font-family: $font-principal;
+            font-family: $font-cards;
             font-size: 16px;
             line-height: 30px;
             text-align: justify;

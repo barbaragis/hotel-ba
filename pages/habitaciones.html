@@ -26,68 +26,75 @@
     <header>
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container-fluid">
-                <h3> HOTEL BA</h3>
+                <h3 class="header__item"> HOTEL BA</h3>
                 <a class="navbar-brand" href="../index.html">
                     <img src="../resources/favicon.ico" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto ">
-                    <li class="header__item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="nav-link active" aria-current="page" href="#">Habitaciones</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="nav-link" href="../pages/galeria.html">Galería</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto ">
+                        <li class="header__item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="nav-link active" aria-current="page" href="#">Habitaciones</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav> 
     </header>
     <!-- cierre de fila de logo y navegacion -->
     <main>
+        <!-- Primera seccion -->
         <section class="habitacion__portada">
             <h1 class="animate__animated animate__backInDown"> Habitaciones</h1>
         </section>
-        <section class="habitacion__info ">
-            <p> Nuestras habitaciones (20m2) tienen capacidad para 2 personas, cuentan con una cama king size, escritorio, baño individual o doble, ducha y un Smart TV de 40 'con vista a la ciudad. WiFi gratuito, espresso y té.
-            Juegan con elementos de diseño masculinos y femeninos para crear un ambiente tranquilo y acogedor. Una combinación de papel tapiz decorativo y cemento o ladrillo se acentúan con muebles hechos a mano localmente y ventanas de estilo industrial.
-        </p>
+        <!-- Segunda seccion de informacion principal e imagenes-->
+        <section>
+            <article  class="habitacion__info">
+                <h2> HOTEL BA </h2>
+                <p > Nuestras habitaciones (20m2) tienen capacidad para 2 personas, cuentan con una cama king size, escritorio, baño individual o doble, ducha y un Smart TV de 40 'con vista a la ciudad. WiFi gratuito, espresso y té.
+                Juegan con elementos de diseño masculinos y femeninos para crear un ambiente tranquilo y acogedor. Una combinación de papel tapiz decorativo y cemento o ladrillo se acentúan con muebles hechos a mano localmente y ventanas de estilo industrial.</p>
+                <div class="galeria__contenedor">
+                    <div class="galeria__imagen">
+                        <img class="border border-1" src="../resources/galeria-cama.jpg" alt="cama doble">
+                    </div>
+                    <div class="galeria__imagen ">
+                        <img  class="border border-1" src="../resources/sillon.jpg" alt="sillon">
+                    </div>
+                    <div class="galeria__imagen ">
+                        <img class="border border-1" src="../resources/telefono.jpg" alt="telefono de hotel">
+                    </div>
+                </div>
+            </article>
         </section>
-        <div class="galeria__contenedor">
-            <div class="galeria__imagen">
-                <img class="border border-1" src="../resources/galeria-cama.jpg" alt="cama doble">
-            </div>
-            <div class="galeria__imagen ">
-                <img  class="border border-1" src="../resources/sillon.jpg" alt="sillon">
-            </div>
-            <div class="galeria__imagen ">
-                <img class="border border-1" src="../resources/telefono.jpg" alt="telefono de hotel">
-            </div>
-        </div>
-        <section class="habitacion__info  ">
-            <p> Aire acondicionado | Artículos de tocador | Cuarto de baño con ducha | Calefacción central | Cafetera (Cápsulas Nespresso incluidas) | Servicio de limpieza diario | Telefónia de marcación directa| TV de pantalla plana |  Servicio de lavandería para huéspedes|  Secador de pelo | Plancha y tabla de planchar | Minibar | Canales de películas y deportes | Caja de seguridad | Acceso a Internet Wi-Fi (gratuito)
-            </p>
+        <!-- Tercera seccion de items e imagenes-->
+        <section>
+            <article  class="habitacion__info  ">
+                <p class="portada__parrafo"> Aire acondicionado | Artículos de tocador | Cuarto de baño con ducha | Calefacción central | Cafetera (Cápsulas Nespresso incluidas) | Servicio de limpieza diario | Telefónia de marcación directa| TV de pantalla plana |  Servicio de lavandería para huéspedes|  Secador de pelo | Plancha y tabla de planchar | Minibar | Canales de películas y deportes | Caja de seguridad | Acceso a Internet Wi-Fi (gratuito).</p>
+                <div class="galeria__contenedor">
+                    <div class="galeria__imagen ">
+                        <img class="border border-1 " src="../resources/minibar.jpg" alt="minibar en habitación">
+                    </div>
+                    <div class="galeria__imagen ">
+                        <img  class="border border-1" src="../resources/bathroom.jpg" alt="baño">
+                    </div>
+                </div>
+            </article>
         </section>
-        <div class="galeria__contenedor">
-            <div class="galeria__imagen  ">
-                <img class="border border-1 " src="../resources/minibar.jpg" alt="minibar en habitación">
-            </div>
-            <div class="galeria__imagen ">
-                <img  class="border border-1" src="../resources/bathroom.jpg" alt="baño">
-            </div>
-        </div>
+        <!-- Cuarta seccion con horarios -->
         <section>
             <article class="portada__texto ">
                 <ul class="habitacion__horarios"> 
@@ -97,33 +104,38 @@
                 </ul>    
             </article>
         </section>
-        <div class="card-group w-75 p-3 mx-auto">
-            <div class="card border border-3 mb-3">
-              <img src="../resources/deluxe-suite.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="principal__titulo"> DELUXE SUITE </h5>
-                <p class="principal__texto"> Estas amplias habitaciones ofrecen gran confort, funcionalidad y estilo que además cuentan con un espacio de trabajo con escritorio. </p>
-              </div>
-              <div class="portada__boton m-3">
-                <a href="https://booking.com">
-                    <button > RESERVE AHORA </button>
-                </a>
-            </div>
-            </div>
-            <div class="card border border-3 mb-3 ">
-              <img src="../resources/deluxe.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="principal__titulo"> DELUXE</h5>
-                <p class="principal__texto"> Creada para la nueva generación de huéspedes quienes priorizan el confort, la sencillez y el estilo original.</p>
-              </div>
-              <div class="portada__boton m-3">
-                <a href="https://booking.com">
-                    <button > RESERVE AHORA </button>
-                </a>
-            </div>
-            </div>
-        </div>
-</main>
+        <!-- Tarjetas de habitaciones con Bootstrap -->
+        <section>
+            <article>
+                <div class="card-group w-75 p-3 mx-auto ">
+                    <div class="card border border-3 mb-3  bg-secondary  bg-opacity-50">
+                        <img src="../resources/deluxe-suite.jpg" class="card-img-top" alt="habitacion deluxe suite cama grande y escritorio">
+                    <div class="card-body">
+                        <h2 class="principal__titulo"> DELUXE SUITE </h2>
+                        <p class="principal__texto"> Estas amplias habitaciones ofrecen gran confort, funcionalidad y estilo que además cuentan con un espacio de trabajo con escritorio. </p>
+                    </div>
+                    <div class="portada__boton m-3">
+                        <a href="https://booking.com">
+                            <button > RESERVAR</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card border border-3 mb-3  bg-secondary  bg-opacity-50">
+                    <img src="../resources/deluxe.jpg" class="card-img-top" alt="habitacion deluxe cama grande y televisor ">
+                    <div class="card-body">
+                        <h2 class="principal__titulo"> DELUXE</h2>
+                        <p class="principal__texto"> Creada para la nueva generación de huéspedes quienes priorizan el confort, la sencillez y el estilo original.</p>
+                    </div>
+                    <div class="portada__boton m-3">
+                        <a href="https://booking.com">
+                            <button > RESERVAR </button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </article>
+        </section>
+    </main>
     <!-- pie de pagina -->
     <footer>
         <section class="footer__contacto">
@@ -146,10 +158,13 @@
             </ul>
         </div>
         </section>
-        <section class="footer__redes">
+        <section class="footer">
+            <h2 class="footer__titulo"> Nuestras redes </h2>
+            <div  class="footer__redes ">
             <a href="https://facebook.com" target="_blank"> <img class ="footer__iconos"src="../resources/facebook-square-brands.svg" alt="facebook"> </a>
             <a href="https://instagram.com" target="_blank"> <img class="footer__iconos" src="../resources/instagram-brands.svg" alt="instagram"> </a> 
-            <p class="footer__derechos"> 2022 Todos los derechos reservados </p>
+            </div>
+            <span class="footer__derechos"> 2022 Todos los derechos reservados </span>
         </section>
     </footer>
     <!-- JavaScript Bundle with Popper -->

@@ -1,76 +1,71 @@
 
 .portada{
-        display: flex;
-        flex-direction:row;
-        justify-content: center;
-        align-items: center;
+    height: 50vh;
+
+    &__contenido{
+        @extend .flex-filas;
         padding: 16px;
-        
-        &__principal{
-            display: grid;
-            height: $tamaño-portada;
-            background-image: url("../resources/portada.jpg");
-            @extend .background-centrado;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto;
-            margin-bottom: 20px;
-            }
-
-
-        &__titulo{
-            color:black;
-            font-size: 30px;
-            font-family: $font-titulos;
-            text-align:center;
-            text-shadow: 1px 1px 2px black;
-        }
-
-        &__parrafo{
-            width: 50vw;
-            font-size: 16px;
-            font-family: $font-principal;
-            text-align: justify;
-            letter-spacing: 1px;
-            word-spacing: 2px;
-            line-height: 25px;
-            padding: 30px;
-        }
-
-        &__imagen img{
-            width: 450px;
-            height: 400px;
-            margin: 20px 0px 20px 0px;
-        }
-
-
-
-        &__boton {
-            grid-column: 2/3;
-            grid-row: auto;
-            @extend .flex-centrado;
-            margin-bottom: 30px;
-        }
-
-        &__boton button {
-            width: 120px;
-            height: 40px;
-        }
-
-        &__subtitulo{
-            font-size: 18px;
-            font-family: 'Playfair Display', serif;
-            text-align: center;
-            margin: 20px 0px 5px 0px;
-        }
-
     }
 
-.accordion-item{
-    @extend .text-centrado;
+    &__principal{
+        display: grid;
+        height: $tamaño-portada;
+        background-image: url("../resources/portada.jpg");
+        @extend .background-centrado;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 20px;
+    }
+
+    &__titulo{
+        color:$color-parrafos;
+        font-size: $titulos;
+        font-family: $font-titulos;
+        text-align:center;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    &__parrafo{
+        width: 50vw;
+        font-size: $contenido;
+        font-family: $font-parrafos;
+        text-align: justify;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        line-height: 25px;
+        padding: 30px;
+    }
+
+    &__imagen img{
+        width: 500px;
+        height: 400px;
+        margin: 20px 0px 20px 0px;
+    }
+
+
+
+    &__boton {
+        grid-column: 2/3;
+        grid-row: auto;
+        @extend .flex-columnas;
+        margin-bottom: 30px;
+    }
+
+    &__boton button {
+        width: 100px;
+        height: 40px;
+    }
+
+    &__subtitulo{
+        font-size: $contenido;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+    }
+
+    &__icono{
+        width: 50px;
+        height: 50px;
+        }
+
 }
 
-.accordion-button{
-    @extend .text-centrado;
-
-}
-    

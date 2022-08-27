@@ -5,12 +5,17 @@
     background-position: center;
 }
 
-.flex-centrado{
+.flex-columnas{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.text-centrado{
-    text-align: center;
-} 
+.flex-filas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+

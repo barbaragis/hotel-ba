@@ -7,7 +7,7 @@ ul{
 
 a {
     text-decoration: none;
-    color: $color-principal;
+    color: gray;
 }
 
 
@@ -24,7 +24,7 @@ h1{
 h2{
     color: $color-titulo;
     font-family: $font-titulos;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -42,8 +42,8 @@ h3{
 
 span{
     font-size: 16px;
-    font-family: $font-principal;
+    font-family: $font-cards;
     text-align: center;
     letter-spacing: 1px;
+    margin: 16px;
 }
-

@@ -1,12 +1,10 @@
 .servicios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: $color-titulo;
 
     &__portada{
         display: grid;
         height: $tamaño-encabezados;
-        background-image:url("../resources/contacto.jpg");
+        background-image:url("../resources/servicios.jpg");
         @extend .background-centrado;
         grid-template-columns: 1fr 1fr 1fr   ;
         grid-template-rows: auto  ;
@@ -16,63 +14,51 @@
     &__portada h1{
         color: $color-principal;
         font-family:  'Playfair Display', serif;
-        font-size: 60px;
-        @extend .text-centrado;
+        font-size: $portada;
+        text-align: center;
         text-shadow: 2px 2px 2px black;
         grid-column: 2/3;
         grid-row: 1/2;
-        @extend .flex-centrado;
+        @extend .flex-columnas;
     }
 
+    &__contenido{
+        @extend .flex-filas;
+        padding: 20px;
+    }
+
+    &__contenido p{
+        width: 70vw;
+        font-size: $contenido;
+        font-family: $font-parrafos;
+        text-align: justify;
+        line-height: 40px;
+        letter-spacing: 1px;
+    }
     
     &__titulo{
-        color:black;
-        font-size: 30px;
-        font-family: $font-titulos;
+        color:$color-parrafos;
+        font-family: $font-cards;
+        font-size: $titulos;
         text-align:center;
-        text-shadow: 1px 1px 2px black;
-        margin-top: 20px;
-
+        margin-bottom: 20px;
     }
 
     &__texto{
-        color: gray;
+        color: $color-parrafos;
         font-family: $font-parrafos;
-        padding: 16px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         word-spacing: 2px;
-        text-align: justify;
+        line-height: 20px;
+        text-align: left;
+        padding: 16px;
     }
 
-    &__imagen{
-        width : 680px;
-        height: 550px;
-        padding: 10px;
-        border-radius: 20px;
-    }
-
-
-    &__grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto;
+    &__tarjetas{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-
-    &__grid h2{
-        color: $color-secundario;
-        font-size: 30px;
-        font-family: $font-titulos;
-    }
-
-    &__grid p{
-        font-size: 16px;
-        font-family: $font-parrafos;
-        text-align: justify;
-        line-height: 20px;
-        padding: 10px;
     }
 
 }

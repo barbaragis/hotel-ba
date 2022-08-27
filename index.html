@@ -25,10 +25,13 @@
     <header>
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container-fluid">
-                <h3> HOTEL BA</h3>
+                <h3 class="header__item"> HOTEL BA</h3>
                 <a class="navbar-brand" href="#">
                 <img src="resources/favicon.ico" alt="logo">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto">
                         <li class=" header__item">
@@ -52,73 +55,94 @@
         </nav> 
     </header>
     <!-- cierre de fila de logo y navegacion -->
-<main>
-    <!-- Portada principal en Index -->
-    <section class="portada__principal ">
-        <article class="portada__boton">
-            <a href="pages/servicios.html"> 
-                <button class="animate__animated animate__flipInX"> Descúbranos </button>
-            </a>
-        </article>
-    </section>
-    <!-- Información principal -->
-    <section>
-        <article class="portada animate__animated animate__bounceInRight animate__delay-1s ">
-            <div>
-                <h1 class="portada__titulo"> SOBRE NOSOTROS  </h1>
-                <p class="portada__parrafo"> <strong>HOTEL BA </strong> es un hotel de estilo urbano en el corazón de Recoleta, en la ciudad de Buenos Aires. 
-                Se encuentra ubicado cerca de los <strong> principales puntos de interés </strong>de la ciudad, para que todos sus huéspedes puedan disfrutar de la misma en su plenitud. 
-                Para todos aquellos que buscan una <strong> experiencia única e inolvidable </strong>, nuestro hotel es fácilmente la mejor opción.  
-                </p> 
-            </div>
-            <div class="portada__imagen">
-                <img class="rounded-top"  src="resources/BOUTIQUE-ENTRADA.jpg" alt="entrada de hotel">
-            </div>
-        </article>
-    </section>
-    <!-- Sección de tarjetas -->
-    <section class="portada__subtitulo">
-        <h2 class="portada__titulo"> HOTEL BOUTIQUE</h2>
-        <span> Ofrecemos una atención singular al detalle y servicios personalizados garantizados para que se sienta como en casa.  </span>
-        <div class="card-group animate__animated animate__fadeInLeftBig animate__delay-2s">
-            <div class="principal__card card">
-                <img src="resources/comida.jpg" class="card-img-top rounded-4 " alt="comida">
+    <main>
+        <!-- Portada principal en Index -->
+        <section class="portada__principal ">
+            <article class="portada__boton">
+                <a href="pages/servicios.html"> 
+                    <button class="animate__animated animate__flipInX"> Descúbranos </button>
+                </a>
+            </article>
+        </section>
+        <!-- Información principal -->
+        <section>
+            <article class="portada__contenido animate__animated animate__bounceInRight animate__delay-2s ">
                 <div>
-                    <h3 class="principal__titulo"> RESTAURANTE & BAR</h3>
-                    <p class="principal__texto"> Desayuno buffet conformado por jugos naturales, café, exquisitos tés, además de frutas, yogurt, cereales, embutidos y más.</p>
+                    <h1 class="portada__titulo "> Bienvenidos a Hotel BA  </h1>
+                    <h2>Lo mejor de estar cerca</h2>
+                    <p class="portada__parrafo"> HOTEL BA es un hotel de estilo urbano en el corazón de Recoleta, en la ciudad de Buenos Aires. 
+                    Se encuentra ubicado cerca de los principales puntos de interés de la ciudad, para que todos sus huéspedes puedan disfrutar de la misma en su plenitud. 
+                    Para todos aquellos que buscan una <strong> experiencia única e inolvidable </strong>, nuestro hotel es fácilmente la mejor opción.  
+                    </p> 
+                </div>
+                <div class="portada__imagen">
+                    <img class="rounded-top"  src="resources/BOUTIQUE-ENTRADA.jpg" alt="entrada de hotel">
+                </div>
+            </article>
+        </section>
+        <!-- Sección de tarjetas -->
+        <section class="portada__subtitulo">
+            <h2 class="portada__titulo "> Hotel Boutique</h2>
+            <span class="portada__subtitulo "> Ofrecemos una atención singular al detalle y servicios personalizados para que se sienta como en casa.  </span>
+            <div class="card-group animate__animated animate__fadeInLeftBig animate__delay-2s">
+                <div class="principal__card card">
+                    <img src="resources/comida.jpg" class="card-img-top rounded-4 " alt="comida">
+                    <div>
+                        <h3 class="principal__titulo"> RESTAURANTE </h3>
+                        <p class="principal__texto"> Desayuno buffet conformado por jugos naturales, café, tés, además de frutas, yogurt, cereales, embutidos y más.</p>
+                    </div>
+                </div>
+                <div class="principal__card card ">
+                    <img src="resources/sauna1.jpg" class="card-img-top rounded-4" alt="sauna">
+                    <div>
+                        <h3 class="principal__titulo"> SPA & SAUNA </h3>
+                        <p class="principal__texto">Si luego de un día en Buenos Aires necesitas recargar energías, puedes nutrir tu cuerpo y espíritu en nuestro Spa.</p>
+                    </div>
+                </div>
+                <div class="principal__card card">
+                    <img src="resources/jardin.jpg" class="card-img-top rounded-4" alt="jardin">
+                    <div>
+                        <h3 class="principal__titulo"> JARDIN & PISCINA </h3>
+                        <p class="principal__texto">Diseñado para encontrar tranquilidad. Contamos con un espacio verde con deck y piscina para disfrutar del aire libre. </p>
+                    </div>
                 </div>
             </div>
-            <div class="principal__card card ">
-                <img src="resources/sauna1.jpg" class="card-img-top rounded-4" alt="sauna">
-                <div>
-                    <h3 class="principal__titulo"> SPA & SAUNA </h3>
-                    <p class="principal__texto">Si luego de un día de Buenos Aires y sus atractivos necesitas recargar energías, puedes nutrir tu cuerpo y espíritu en nuestro Spa.</p>
+        </section>
+        <!-- Imagen con link que redirige a Contacto -->
+        <section>
+            <article class="portada__contenido d-flex flex-column ">
+                <div >
+                    <img src="resources/ubicacion-portada.jpg" class="mw-100 rounded-4" alt="escultura de flor en aluminio ubicada en Buenos Aires" >
                 </div>
-            </div>
-            <div class="principal__card card">
-                <img src="resources/jardin.jpg" class="card-img-top rounded-4" alt="jardin">
-                <div>
-                    <h3 class="principal__titulo"> JARDIN & PISCINA </h3>
-                    <p class="principal__texto">Diseñado para encontrar tranquilidad.
-                    Contamos con un espacio verde con deck y piscina para disfutar del aire libre</p>
+                <div class="principal__titulo m-3 text-decoration-underline ">
+                    <a href="pages/contacto.html"> Nuestra ubicación </a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Información adicional -->
-    <div class="card p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end" >
-        <div class="card-title">
-            <h3> ¡ Estamos adheridos a Previaje! </h3>
-        </div>
-        <div class="card-body">
-            <span>Previaje es un programa de preventa turística que te reintegra el 50% del valor de tu viaje en crédito, para viajar y disfrutar de todos los destinos de Argentina, desde noviembre de 2021 y durante todo el 2022.
-            </span>
-            <a href="https://previaje.gob.ar">
-                Más información
-            </a>
-        </div>
-    </div>
-</main>
+            </article>
+        </section>
+        <!-- Seccion con información de descuento -->
+        <section>
+            <article class="contacto__datos bg-secondary p-2 text-dark  bg-opacity-25">
+                <h3 class="portada__subtitulo m-3"> DESCUENTO EN EFECTIVO </h3>
+                <img src="resources/billete.png" alt="icono de billete">
+                <p class="portada__parrafo ">
+                    Obtenga un 10% de descuento adicional para pagos realizados en efectivo (solo dólares estadounidenses USD). Aplicable ÚNICAMENTE a reservas DIRECTAS vía e-mail (reservas@hotelbuenosaires.com).
+                </p>
+            </article>
+        </section>
+        <!-- Newsletter (novedades) -->
+        <section>
+            <article class="portada__contenido">
+                <h3 class="portada__subtitulo"> Suscríbase para recibir nuestras novedades </h3>
+                <form class="formulario mx-5 my-5 contacto__datos">
+                    <div class="mb-3 ">
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button class="portada__boton m-3" type="submit" > ENVIAR </button>
+                </form>
+            </article>
+        </section>
+    </main>
     <!-- Pie de pagina -->
     <footer>
         <section class="footer__contacto">
@@ -131,7 +155,7 @@
                 <li class="footer__item"> Tel : +54 11 5485-7877</li>
         </section>
         <section class="footer__enlaces">
-            <h2 class="footer__titulo"> ENLACES</h2>
+            <h2 class="footer__titulo"> Enlaces </h2>
             <ul>
                 <li class="footer__item"> <a href="index.html"> Inicio</a></li>
                 <li class="footer__item"> <a href="pages/habitaciones.html"> Habitaciones</a></li>
@@ -141,10 +165,13 @@
             </ul>
         </div>
         </section>
-        <section class="footer__redes">
+        <section class="footer">
+            <h2 class="footer__titulo"> Nuestras redes </h2>
+            <div  class="footer__redes ">
             <a href="https://facebook.com" target="_blank"> <img class ="footer__iconos"src="resources/facebook-square-brands.svg" alt="facebook"> </a>
             <a href="https://instagram.com" target="_blank"> <img class="footer__iconos" src="resources/instagram-brands.svg" alt="instagram"> </a> 
-            <p class="footer__derechos"> 2022 Todos los derechos reservados </p>
+            </div>
+            <span class="footer__derechos"> 2022 Todos los derechos reservados </span>
         </section>
     </footer>   
     <!-- JavaScript Bundle with Popper -->

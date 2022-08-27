@@ -23,10 +23,10 @@ header{
 
         &__item{
             font-family: $font-titulos;
-            font-size:  16px;
+            font-size: $contenido;
             display: inline;
             font-weight: bold;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             position: sticky;
             top: 0px;
             padding: 5px;

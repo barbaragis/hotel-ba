@@ -25,86 +25,116 @@
     <header>
         <nav class="navbar navbar-expand-lg header__nav">
             <div class="container-fluid">
-                <h3> HOTEL BA</h3>
+                <h3 class="header__item"> HOTEL BA</h3>
                 <a class="navbar-brand" href="../index.html">
                     <img src="../resources/favicon.ico" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto">
-                    <li class="header__item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="nav-link" href="../pages/habitaciones.html">Habitaciones</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="nav-link" href="../pages/galeria.html">Galería </a>
-                    </li>
-                    <li class=" header__item">
-                        <a class="nav-link active" aria-current="page" href="#">Servicios</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="header__item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="nav-link" href="../pages/habitaciones.html">Habitaciones</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="nav-link" href="../pages/galeria.html">Galería </a>
+                        </li>
+                        <li class=" header__item">
+                            <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav> 
     </header>
     <!-- cierre de fila de logo y navegacion -->
     <main>
-        <!-- Primera seccion -->
+        <!-- Portada -->
         <section>
             <article class="servicios__portada">
                 <h1> Servicios </h1>
             </article>
         </section>
-        <!-- Segunda seccion con servicios -->
-        <section class="servicios">
-            <p class="servicios__texto"> HOTEL BA le invita a una experiencia culinaria inolvidable en un entorno encantador, en cualquier momento del día, desde el almuerzo hasta la cena, pasando por la hora del té, cócteles, sin mencionar nuestro almuerzo especial del domingo y otras comodidades para la mejor estadía.
-            </p>
-        </section>
-            <article class= "servicios__grid animate__animated animate__fadeIn animate__delay-1s">
-                <div >
-                <h2> BOUTIQUE </h2>
-                <p class="servicios__texto "> Hotel Boutique es un término originario de Europa, utilizado para describir pequeños hoteles con encanto y de entornos íntimos; generalmente no convencionales y emplazados en antiguas casas. </p>
-            </div>
-                <img  class="servicios__imagen" src="../resources/boutique.jpg" alt="hotel boutique">
-            </article>
-            <article class="servicios__grid  animate__animated animate__fadeIn animate__delay-2s">
-                <img class="servicios__imagen" src="../resources/comida.jpg" alt="plato de comida">
-                <div >
-                <h2> RESTAURANTE & BAR</h2>
-                <p  class="servicios__texto"> Relacionados con la comida local, moderna y saludable, utilizamos ingredientes de calidad para resaltar la cocina tradicional de nuestro país y crear una verdadera experiencia gastronómica </p>
+        <!-- Seccion con informacion sobre servicios -->
+        <section>
+            <article class="servicios__contenido">
+                <div>
+                    <h2 class="portada__titulo" > BOUTIQUE </h2>
+                    <h2 >Todo lo que necesitas para disfrutar de unos días de relax y calma</h2>
+                    <p >Hotel Boutique es un término originario de Europa, utilizado para describir pequeños hoteles con encanto y de entornos íntimos; generalmente no convencionales y emplazados en antiguas casas. Nuestro hotel cuenta con modernas instalaciones y un completo service pack para que todo te sea más fácil mientras estés con nosotros. 
+                        <strong>HOTEL BA</strong> le invita a una experiencia culinaria inolvidable en un entorno encantador, en cualquier momento del día, desde el almuerzo hasta la cena, pasando por la hora del té, cócteles, sin mencionar nuestro almuerzo especial del domingo y otras comodidades para la mejor estadía.</p>
                 </div>
             </article>
-            <article class="servicios__grid  animate__animated animate__fadeIn animate__delay-3s">
-                <div>
-                <h2> PISCINA </h2>
-                <p  class="servicios__texto" >Contamos con piscina exterior realizada en acero inoxidable y climatizada con energía sustentable. Ideal para disfrutar de un merecido relax </p>
-            </div>
-                <img  class="servicios__imagen" src="../resources/piscina-servicios.jpg" alt="piscina de hotel">
-            </article>
-            <article class="servicios__grid animate__animated animate__fadeIn animate__delay-4s">
-                <img  class="servicios__imagen" src="../resources/sauna1.jpg" alt="sauna" >
-                <div>
-                <h2> SPA </h2>
-                <p  class="servicios__texto"> Despierte sus sentidos y disfrute de un momento de relax en nuestro  spa. Cuenta con programas y tratamientos que  hemos diseñado para cada momento y necesidad. </p>
-            </div>
+        </section>
+        <!-- Tarjetas de servicios -->
+        <section>
+            <article>
+                <div class="servicios__tarjetas  animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="card-group m-3 gap-3 ">
+                        <div class="card  border border-0 ">
+                            <img src="../resources/desayuno-buffet.jpg" class="card-img-top rounded-3" alt="desayuno buffet">
+                            <div class="card-body">
+                                <h2 class="servicios__titulo"> Desayuno Buffet</h2>
+                                <p class="servicios__texto"> Ofrecemos una amplia variedad de alimentos para que puedas disfrutar a pleno tu estadía en Buenos Aires. </p>
+                            </div>
+                        </div>
+                        <div class="card  border border-0 ">
+                            <img src="../resources/almuerzo.jpg" class="card-img-top rounded-3" alt="plato de comida con carne y vegetales">
+                            <div class="card-body">
+                                <h2 class="servicios__titulo"> Almuerzo & Cena</h2>
+                                <p class="servicios__texto"> Nuestras especialidades son pastas artesanales, carnes y pescados además de ofrecer diferentes opciones libres de gluten.</p>
+                            </div>
+                        </div>
+                        <div class="card  border border-0 ">
+                            <img src="../resources/desayuno-a-la-habitacion.jpg" class="card-img-top rounded-3" alt="bandeja de desayuno presentado sobre una cama">
+                            <div class="card-body">
+                                <h2 class="servicios__titulo"> Room service 24hs </h2>
+                                <p class="servicios__texto"> El servicio a la habitación está disponible para quienes deseen disfrutar una comida en la privacidad y confort de su habitación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
+        <!-- Tarjetas de servicios tamaño mas grande -->
+        <section>
+            <article class="servicios__tarjetas  animate__animated animate__fadeIn animate__delay-3s">
+                <div class="card-group m-3 gap-5 ">
+                    <div class="card  border border-0 ">
+                        <img src="../resources/piscina-exterior2.jpg" class="card-img-top rounded-3" alt="piscina de exterior">
+                        <div class="card-body">
+                            <h2 class="servicios__titulo"> Piscina </h2>
+                            <p class="servicios__texto">Contamos con piscina exterior realizada en acero inoxidable y climatizada con energía sustentable. Ideal para disfrutar de un merecido descanso.</p>
+                        </div>
+                    </div>
+                    <div class="card  border border-0 ">
+                        <img src="../resources/sauna.jpg" class="card-img-top rounded-3" alt="sauna">
+                        <div class="card-body">
+                            <h2 class="servicios__titulo"> Spa & Sauna </h2>
+                            <p class="servicios__texto"> Disfrute de un momento de relax en nuestro spa. Cuenta con programas y tratamientos que  hemos diseñado para cada momento y necesidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- Comentario -->
         <section class="info">
-            <h3>Háganos saber si podemos ayudarlo con consultas de reserva, solicitud personal o cualquier otra información.</h3>
-            <div class="portada__boton">
-                <a href="../pages/contacto.html">
-                <button> CONTÁCTENOS </button>
-                </a>
-            </div>
+            <article>
+                <h3> Háganos saber si podemos ayudarlo con consultas de reserva, solicitud personal o cualquier otra información </h3>
+                <div class="portada__boton">
+                    <a href="../pages/contacto.html"> 
+                        <button> Contáctenos </button>
+                    </a>
+                </div>
+            </article>
         </section>
-
     </main>
     <!-- pie de pagina -->
     <footer>
@@ -128,10 +158,13 @@
             </ul>
         </div>
         </section>
-        <section class="footer__redes">
+        <section class="footer">
+            <h2 class="footer__titulo"> Nuestras redes </h2>
+            <div  class="footer__redes ">
             <a href="https://facebook.com" target="_blank"> <img class ="footer__iconos"src="../resources/facebook-square-brands.svg" alt="facebook"> </a>
             <a href="https://instagram.com" target="_blank"> <img class="footer__iconos" src="../resources/instagram-brands.svg" alt="instagram"> </a> 
-            <p class="footer__derechos"> 2022 Todos los derechos reservados </p>
+            </div>
+            <span class="footer__derechos"> 2022 Todos los derechos reservados </span>
         </section>
     </footer>   
     <!-- JavaScript Bundle with Popper -->
